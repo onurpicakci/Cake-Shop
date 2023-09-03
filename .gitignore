@@ -1,0 +1,16 @@
+
+CakeShop/.DS_Store
+.idea/.DS_Store
+.idea/.idea.CakeShop/.DS_Store
+*.info
+*.dll
+*.pdb
+*.editorconfig
+*.cache
+.DS_Store
+CakeShop/bin/Debug/net7.0/CakeShop.staticwebassets.runtime.json
+*.p7s
+*.nupkg
+*.sha512
+*.exe
+CakeShop/obj/dotnet-aspnet-codegenerator

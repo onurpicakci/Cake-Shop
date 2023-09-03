@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakeShop", "CakeShop\CakeShop.csproj", "{63EC2FCE-B975-44D2-AACE-344CFB7A84B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{1E4EE51F-9608-46B7-ABB9-D23B1AE31D2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{E024AE03-130E-4153-A883-E30483E3D759}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63EC2FCE-B975-44D2-AACE-344CFB7A84B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63EC2FCE-B975-44D2-AACE-344CFB7A84B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63EC2FCE-B975-44D2-AACE-344CFB7A84B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63EC2FCE-B975-44D2-AACE-344CFB7A84B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E4EE51F-9608-46B7-ABB9-D23B1AE31D2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E4EE51F-9608-46B7-ABB9-D23B1AE31D2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E4EE51F-9608-46B7-ABB9-D23B1AE31D2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E4EE51F-9608-46B7-ABB9-D23B1AE31D2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E024AE03-130E-4153-A883-E30483E3D759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E024AE03-130E-4153-A883-E30483E3D759}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E024AE03-130E-4153-A883-E30483E3D759}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E024AE03-130E-4153-A883-E30483E3D759}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

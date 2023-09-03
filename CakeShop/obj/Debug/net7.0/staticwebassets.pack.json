@@ -1,0 +1,861 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/obj/Debug/net7.0/scopedcss/projectbundle/CakeShop.bundle.scp.css",
+      "PackagePath": "staticwebassets/CakeShop.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/.DS_Store",
+      "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/.DS_Store",
+      "PackagePath": "staticwebassets/template/.DS_Store"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/Source/Magnific-Popup-master.zip",
+      "PackagePath": "staticwebassets/template/Source/Magnific-Popup-master.zip"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/Source/OwlCarousel2-2.3.4.zip",
+      "PackagePath": "staticwebassets/template/Source/OwlCarousel2-2.3.4.zip"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/Source/SlickNav-master.zip",
+      "PackagePath": "staticwebassets/template/Source/SlickNav-master.zip"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/Source/bootstrap-4.4.1-dist.zip",
+      "PackagePath": "staticwebassets/template/Source/bootstrap-4.4.1-dist.zip"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/Source/elegant_font.zip",
+      "PackagePath": "staticwebassets/template/Source/elegant_font.zip"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/Source/flation.zip",
+      "PackagePath": "staticwebassets/template/Source/flation.zip"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/Source/font-awesome-4.7.0.zip",
+      "PackagePath": "staticwebassets/template/Source/font-awesome-4.7.0.zip"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/Source/jquery-nice-select-1.1.0.zip",
+      "PackagePath": "staticwebassets/template/Source/jquery-nice-select-1.1.0.zip"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/about.html",
+      "PackagePath": "staticwebassets/template/about.html"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/blog-details.html",
+      "PackagePath": "staticwebassets/template/blog-details.html"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/blog.html",
+      "PackagePath": "staticwebassets/template/blog.html"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/checkout.html",
+      "PackagePath": "staticwebassets/template/checkout.html"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/class.html",
+      "PackagePath": "staticwebassets/template/class.html"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/contact.html",
+      "PackagePath": "staticwebassets/template/contact.html"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/css/barfiller.css",
+      "PackagePath": "staticwebassets/template/css/barfiller.css"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/template/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/css/elegant-icons.css",
+      "PackagePath": "staticwebassets/template/css/elegant-icons.css"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/css/flaticon.css",
+      "PackagePath": "staticwebassets/template/css/flaticon.css"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/css/font-awesome.min.css",
+      "PackagePath": "staticwebassets/template/css/font-awesome.min.css"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/css/magnific-popup.css",
+      "PackagePath": "staticwebassets/template/css/magnific-popup.css"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/css/nice-select.css",
+      "PackagePath": "staticwebassets/template/css/nice-select.css"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/css/owl.carousel.min.css",
+      "PackagePath": "staticwebassets/template/css/owl.carousel.min.css"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/css/slicknav.min.css",
+      "PackagePath": "staticwebassets/template/css/slicknav.min.css"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/css/style.css",
+      "PackagePath": "staticwebassets/template/css/style.css"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/fonts/ElegantIcons.eot",
+      "PackagePath": "staticwebassets/template/fonts/ElegantIcons.eot"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/fonts/ElegantIcons.svg",
+      "PackagePath": "staticwebassets/template/fonts/ElegantIcons.svg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/fonts/ElegantIcons.ttf",
+      "PackagePath": "staticwebassets/template/fonts/ElegantIcons.ttf"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/fonts/ElegantIcons.woff",
+      "PackagePath": "staticwebassets/template/fonts/ElegantIcons.woff"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/fonts/Flaticon.eot",
+      "PackagePath": "staticwebassets/template/fonts/Flaticon.eot"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/fonts/Flaticon.svg",
+      "PackagePath": "staticwebassets/template/fonts/Flaticon.svg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/fonts/Flaticon.ttf",
+      "PackagePath": "staticwebassets/template/fonts/Flaticon.ttf"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/fonts/Flaticon.woff",
+      "PackagePath": "staticwebassets/template/fonts/Flaticon.woff"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/fonts/FontAwesome.otf",
+      "PackagePath": "staticwebassets/template/fonts/FontAwesome.otf"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/fonts/fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets/template/fonts/fontawesome-webfont.eot"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/fonts/fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets/template/fonts/fontawesome-webfont.svg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/fonts/fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets/template/fonts/fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/fonts/fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets/template/fonts/fontawesome-webfont.woff"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/fonts/fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets/template/fonts/fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/about-video.jpg",
+      "PackagePath": "staticwebassets/template/img/about-video.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/blog/blog-1.jpg",
+      "PackagePath": "staticwebassets/template/img/blog/blog-1.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/blog/blog-2.jpg",
+      "PackagePath": "staticwebassets/template/img/blog/blog-2.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/blog/blog-3.jpg",
+      "PackagePath": "staticwebassets/template/img/blog/blog-3.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/blog/blog-4.jpg",
+      "PackagePath": "staticwebassets/template/img/blog/blog-4.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/blog/br-1.jpg",
+      "PackagePath": "staticwebassets/template/img/blog/br-1.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/blog/br-2.jpg",
+      "PackagePath": "staticwebassets/template/img/blog/br-2.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/blog/br-3.jpg",
+      "PackagePath": "staticwebassets/template/img/blog/br-3.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/blog/br-4.jpg",
+      "PackagePath": "staticwebassets/template/img/blog/br-4.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/blog/br-5.jpg",
+      "PackagePath": "staticwebassets/template/img/blog/br-5.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/blog/details/blog-author.jpg",
+      "PackagePath": "staticwebassets/template/img/blog/details/blog-author.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/blog/details/blog-details.jpg",
+      "PackagePath": "staticwebassets/template/img/blog/details/blog-details.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/blog/details/blog-hero.jpg",
+      "PackagePath": "staticwebassets/template/img/blog/details/blog-hero.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/blog/details/clock.png",
+      "PackagePath": "staticwebassets/template/img/blog/details/clock.png"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/blog/details/comment-1.jpg",
+      "PackagePath": "staticwebassets/template/img/blog/details/comment-1.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/blog/details/comment-2.jpg",
+      "PackagePath": "staticwebassets/template/img/blog/details/comment-2.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/blog/details/comment-3.jpg",
+      "PackagePath": "staticwebassets/template/img/blog/details/comment-3.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/blog/details/user.png",
+      "PackagePath": "staticwebassets/template/img/blog/details/user.png"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/cake-piece.png",
+      "PackagePath": "staticwebassets/template/img/cake-piece.png"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/class-video.jpg",
+      "PackagePath": "staticwebassets/template/img/class-video.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/class/class-1.jpg",
+      "PackagePath": "staticwebassets/template/img/class/class-1.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/class/class-2.jpg",
+      "PackagePath": "staticwebassets/template/img/class/class-2.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/class/class-3.jpg",
+      "PackagePath": "staticwebassets/template/img/class/class-3.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/class/class-4.jpg",
+      "PackagePath": "staticwebassets/template/img/class/class-4.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/class/class-5.jpg",
+      "PackagePath": "staticwebassets/template/img/class/class-5.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/class/class-6.jpg",
+      "PackagePath": "staticwebassets/template/img/class/class-6.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/footer-bg.jpg",
+      "PackagePath": "staticwebassets/template/img/footer-bg.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/footer-logo.png",
+      "PackagePath": "staticwebassets/template/img/footer-logo.png"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/hero/hero-1.jpg",
+      "PackagePath": "staticwebassets/template/img/hero/hero-1.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/icon/cart.png",
+      "PackagePath": "staticwebassets/template/img/icon/cart.png"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/icon/heart.png",
+      "PackagePath": "staticwebassets/template/img/icon/heart.png"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/icon/search.png",
+      "PackagePath": "staticwebassets/template/img/icon/search.png"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/instagram/cake-piece.png",
+      "PackagePath": "staticwebassets/template/img/instagram/cake-piece.png"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/instagram/instagram-1.jpg",
+      "PackagePath": "staticwebassets/template/img/instagram/instagram-1.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/instagram/instagram-2.jpg",
+      "PackagePath": "staticwebassets/template/img/instagram/instagram-2.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/instagram/instagram-3.jpg",
+      "PackagePath": "staticwebassets/template/img/instagram/instagram-3.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/instagram/instagram-4.jpg",
+      "PackagePath": "staticwebassets/template/img/instagram/instagram-4.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/instagram/instagram-5.jpg",
+      "PackagePath": "staticwebassets/template/img/instagram/instagram-5.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/logo.png",
+      "PackagePath": "staticwebassets/template/img/logo.png"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/cart/cart-1.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/cart/cart-1.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/cart/cart-2.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/cart/cart-2.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/cart/cart-3.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/cart/cart-3.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/cart/cart-4.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/cart/cart-4.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/details/product-big-1.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/details/product-big-1.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/details/product-big-2.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/details/product-big-2.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/details/product-big-3.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/details/product-big-3.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/details/product-big-4.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/details/product-big-4.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/details/product-big-5.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/details/product-big-5.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/details/thumb-1.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/details/thumb-1.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/details/thumb-2.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/details/thumb-2.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/details/thumb-3.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/details/thumb-3.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/details/thumb-4.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/details/thumb-4.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/details/thumb-5.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/details/thumb-5.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/product-1.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/product-1.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/product-10.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/product-10.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/product-11.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/product-11.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/product-12.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/product-12.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/product-2.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/product-2.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/product-3.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/product-3.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/product-4.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/product-4.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/product-5.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/product-5.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/product-6.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/product-6.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/product-7.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/product-7.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/product-8.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/product-8.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/product-9.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/product-9.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/team/team-1.jpg",
+      "PackagePath": "staticwebassets/template/img/team/team-1.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/team/team-2.jpg",
+      "PackagePath": "staticwebassets/template/img/team/team-2.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/team/team-3.jpg",
+      "PackagePath": "staticwebassets/template/img/team/team-3.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/team/team-4.jpg",
+      "PackagePath": "staticwebassets/template/img/team/team-4.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/testimonial/ta-1.jpg",
+      "PackagePath": "staticwebassets/template/img/testimonial/ta-1.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/testimonial/ta-2.jpg",
+      "PackagePath": "staticwebassets/template/img/testimonial/ta-2.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/index.html",
+      "PackagePath": "staticwebassets/template/index.html"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/template/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/js/jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets/template/js/jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/js/jquery.barfiller.js",
+      "PackagePath": "staticwebassets/template/js/jquery.barfiller.js"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/js/jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets/template/js/jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/js/jquery.nice-select.min.js",
+      "PackagePath": "staticwebassets/template/js/jquery.nice-select.min.js"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/js/jquery.nicescroll.min.js",
+      "PackagePath": "staticwebassets/template/js/jquery.nicescroll.min.js"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/js/jquery.slicknav.js",
+      "PackagePath": "staticwebassets/template/js/jquery.slicknav.js"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/js/main.js",
+      "PackagePath": "staticwebassets/template/js/main.js"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/js/owl.carousel.min.js",
+      "PackagePath": "staticwebassets/template/js/owl.carousel.min.js"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/main.html",
+      "PackagePath": "staticwebassets/template/main.html"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/readme.txt",
+      "PackagePath": "staticwebassets/template/readme.txt"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/sass/_about.scss",
+      "PackagePath": "staticwebassets/template/sass/_about.scss"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/sass/_base.scss",
+      "PackagePath": "staticwebassets/template/sass/_base.scss"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/sass/_blog-details.scss",
+      "PackagePath": "staticwebassets/template/sass/_blog-details.scss"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/sass/_blog-sidebar.scss",
+      "PackagePath": "staticwebassets/template/sass/_blog-sidebar.scss"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/sass/_blog.scss",
+      "PackagePath": "staticwebassets/template/sass/_blog.scss"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/sass/_breadcrumb.scss",
+      "PackagePath": "staticwebassets/template/sass/_breadcrumb.scss"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/sass/_checkout.scss",
+      "PackagePath": "staticwebassets/template/sass/_checkout.scss"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/sass/_class.scss",
+      "PackagePath": "staticwebassets/template/sass/_class.scss"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/sass/_contact.scss",
+      "PackagePath": "staticwebassets/template/sass/_contact.scss"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/sass/_footer.scss",
+      "PackagePath": "staticwebassets/template/sass/_footer.scss"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/sass/_header.scss",
+      "PackagePath": "staticwebassets/template/sass/_header.scss"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/sass/_hero.scss",
+      "PackagePath": "staticwebassets/template/sass/_hero.scss"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/sass/_home-page.scss",
+      "PackagePath": "staticwebassets/template/sass/_home-page.scss"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/sass/_mixins.scss",
+      "PackagePath": "staticwebassets/template/sass/_mixins.scss"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/sass/_product.scss",
+      "PackagePath": "staticwebassets/template/sass/_product.scss"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/sass/_responsive.scss",
+      "PackagePath": "staticwebassets/template/sass/_responsive.scss"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/sass/_shop-details.scss",
+      "PackagePath": "staticwebassets/template/sass/_shop-details.scss"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/sass/_shop.scss",
+      "PackagePath": "staticwebassets/template/sass/_shop.scss"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/sass/_shopping-cart.scss",
+      "PackagePath": "staticwebassets/template/sass/_shopping-cart.scss"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/sass/_variable.scss",
+      "PackagePath": "staticwebassets/template/sass/_variable.scss"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/sass/_wisslist.scss",
+      "PackagePath": "staticwebassets/template/sass/_wisslist.scss"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/sass/style.scss",
+      "PackagePath": "staticwebassets/template/sass/style.scss"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/shop-details.html",
+      "PackagePath": "staticwebassets/template/shop-details.html"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/shop.html",
+      "PackagePath": "staticwebassets/template/shop.html"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/shoping-cart.html",
+      "PackagePath": "staticwebassets/template/shoping-cart.html"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/wisslist.html",
+      "PackagePath": "staticwebassets/template/wisslist.html"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.CakeShop.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.CakeShop.props",
+      "PackagePath": "build\\CakeShop.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.CakeShop.props",
+      "PackagePath": "buildMultiTargeting\\CakeShop.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.CakeShop.props",
+      "PackagePath": "buildTransitive\\CakeShop.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
