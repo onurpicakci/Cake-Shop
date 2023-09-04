@@ -1,5 +1,5 @@
 using DataAccess.Context;
-using DataAccess.Interface;
+using DataAccess.Interfaces;
 using Domain.Entity;
 
 namespace DataAccess.Repository;

@@ -16,6 +16,12 @@ public class About
     public string Feature2 { get; set; }
     
     public string Feature3 { get; set; }
+
+    public int FeatureLevel { get; set; }
+    
+    public int Feature2Level { get; set; }
+    
+    public int Feature3Level { get; set; }
     
     
 }

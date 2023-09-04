@@ -1,0 +1,28 @@
+@using Domain.Entity 
+@model List<Cake>
+
+<section class="product spad">
+        <div class="container">
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="@item.ImageThumbnailUrl">
+                                <div class="product__label">
+                                    <span>@item.Category.Name</span>
+                                </div>
+                            </div>
+                            <div class="product__item__text">
+                                <h6><a href="#">@item.Name</a></h6>
+                                <div class="product__item__price">$@item.Price</div>
+                                <div class="cart_add">
+                                    <a href="#">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>

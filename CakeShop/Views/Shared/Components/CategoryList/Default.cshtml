@@ -1,0 +1,20 @@
+@using Domain.Entity
+@model List<Category>
+
+<div class="categories">
+    <div class="container">
+        <div class="row">
+            <div class="categories__slider owl-carousel">
+                @foreach (var item in Model)
+                {
+                    <div class="categories__item">
+                        <div class="categories__item__icon">
+                            <span class="@item.ImageUrl"></span>
+                            <h5>@item.Name</h5>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

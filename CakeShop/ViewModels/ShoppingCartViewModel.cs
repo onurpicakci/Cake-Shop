@@ -1,16 +1,17 @@
-using DataAccess.Interface;
+using Application.Interfaces;
+using DataAccess.Interfaces;
 using Domain.Entity;
 
 namespace CakeShop.ViewModels;
 
 public class ShoppingCartViewModel
 {
-    public ShoppingCartViewModel(ICartItemRepository cartItemRepository, decimal shoppingCartTotal)
+    public ShoppingCartViewModel(ICartItemService cartItemService, decimal shoppingCartTotal)
     {
-        ShoppingCart = cartItemRepository;
+        ShoppingCart = cartItemService;
         ShoppingCartTotal = shoppingCartTotal;
     }
     
-    public ICartItemRepository ShoppingCart { get; }
+    public ICartItemService ShoppingCart { get; }
     public decimal ShoppingCartTotal { get; }
 }

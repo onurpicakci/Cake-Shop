@@ -1,4 +1,4 @@
-using DataAccess.Interface;
+using DataAccess.Interfaces;
 using DataAccess.Repository;
 using Domain.Entity;
 

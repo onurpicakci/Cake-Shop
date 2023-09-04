@@ -405,6 +405,10 @@
       "PackagePath": "staticwebassets/template/fonts/fontawesome-webfont.woff2"
     },
     {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/.DS_Store",
+      "PackagePath": "staticwebassets/template/img/.DS_Store"
+    },
+    {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/about-video.jpg",
       "PackagePath": "staticwebassets/template/img/about-video.jpg"
     },
@@ -517,6 +521,10 @@
       "PackagePath": "staticwebassets/template/img/footer-logo.png"
     },
     {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/hero/assortment-pieces-cake.jpg",
+      "PackagePath": "staticwebassets/template/img/hero/assortment-pieces-cake.jpg"
+    },
+    {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/hero/hero-1.jpg",
       "PackagePath": "staticwebassets/template/img/hero/hero-1.jpg"
     },
@@ -559,6 +567,14 @@
     {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/logo.png",
       "PackagePath": "staticwebassets/template/img/logo.png"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/.DS_Store",
+      "PackagePath": "staticwebassets/template/img/shop/.DS_Store"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/cake-shop-muffin.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/cake-shop-muffin.jpg"
     },
     {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/cart/cart-1.jpg",
@@ -615,6 +631,10 @@
     {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/details/thumb-5.jpg",
       "PackagePath": "staticwebassets/template/img/shop/details/thumb-5.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/lemoon-cheescake.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/lemoon-cheescake.jpg"
     },
     {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/product-1.jpg",

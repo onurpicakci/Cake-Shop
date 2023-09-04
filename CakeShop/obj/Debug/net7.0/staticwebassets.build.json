@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "udK895r8ArD+ZntykzEZUCrT6HqJWQW6O079FN2CP6g=",
+  "Hash": "MFCZk8LduEZz2aJz+xrItFXS4gIIwrvah9jYM7rBVPQ=",
   "Source": "CakeShop",
   "BasePath": "_content/CakeShop",
   "Mode": "Default",
@@ -1615,6 +1615,23 @@
       "OriginalItemSpec": "wwwroot/template/fonts/FontAwesome.otf"
     },
     {
+      "Identity": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/.DS_Store",
+      "SourceId": "CakeShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/",
+      "BasePath": "_content/CakeShop",
+      "RelativePath": "template/img/.DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/template/img/.DS_Store"
+    },
+    {
       "Identity": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/about-video.jpg",
       "SourceId": "CakeShop",
       "SourceType": "Discovered",
@@ -2091,6 +2108,23 @@
       "OriginalItemSpec": "wwwroot/template/img/footer-logo.png"
     },
     {
+      "Identity": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/hero/assortment-pieces-cake.jpg",
+      "SourceId": "CakeShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/",
+      "BasePath": "_content/CakeShop",
+      "RelativePath": "template/img/hero/assortment-pieces-cake.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/template/img/hero/assortment-pieces-cake.jpg"
+    },
+    {
       "Identity": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/hero/hero-1.jpg",
       "SourceId": "CakeShop",
       "SourceType": "Discovered",
@@ -2276,6 +2310,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/template/img/logo.png"
+    },
+    {
+      "Identity": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/.DS_Store",
+      "SourceId": "CakeShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/",
+      "BasePath": "_content/CakeShop",
+      "RelativePath": "template/img/shop/.DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/template/img/shop/.DS_Store"
+    },
+    {
+      "Identity": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/cake-shop-muffin.jpg",
+      "SourceId": "CakeShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/",
+      "BasePath": "_content/CakeShop",
+      "RelativePath": "template/img/shop/cake-shop-muffin.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/template/img/shop/cake-shop-muffin.jpg"
     },
     {
       "Identity": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/cart/cart-1.jpg",
@@ -2514,6 +2582,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/template/img/shop/details/thumb-5.jpg"
+    },
+    {
+      "Identity": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/lemoon-cheescake.jpg",
+      "SourceId": "CakeShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/",
+      "BasePath": "_content/CakeShop",
+      "RelativePath": "template/img/shop/lemoon-cheescake.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/template/img/shop/lemoon-cheescake.jpg"
     },
     {
       "Identity": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/product-1.jpg",

@@ -1,5 +1,6 @@
+using Application.Interfaces;
 using CakeShop.ViewModels;
-using DataAccess.Interface;
+using DataAccess.Interfaces;
 using Domain.Entity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,18 +8,18 @@ namespace CakeShop.Controllers
 {
     public class CakeController : Controller
     {
-        private readonly ICakeRepository _cakeRepository;
-        private readonly ICategoryRepository  _categoryRepository;
+        private readonly ICakeService _cakeService;
+        private readonly ICategoryService  _categoryService;
         
-        public CakeController(ICakeRepository cakeRepository, ICategoryRepository  categoryRepository)
+        public CakeController(ICakeService cakeService, ICategoryService  categoryService)
         {
-            _cakeRepository = cakeRepository;
-            _categoryRepository = categoryRepository;
+            _cakeService = cakeService;
+            _categoryService = categoryService;
         }
 
         public IActionResult Index()
         {
-            var values = _cakeRepository.GetAllCakes().ToList();
+            var values = _cakeService.GetAllCakes().ToList();
             return View(values);
         }
         
@@ -29,13 +30,13 @@ namespace CakeShop.Controllers
             
             if (string.IsNullOrEmpty(category))
             {
-                cakes = _cakeRepository.GetAllCakes().ToList();
+                cakes = _cakeService.GetAllCakes().ToList();
                 currentCategory = "All cakes";
             }
             else
             {
-                cakes = _cakeRepository.GetAllCakes().Where(c => c.Category.Name == category).ToList();
-                currentCategory = _categoryRepository.GetAllCategories().FirstOrDefault(c => c.Name == category)?.Name;
+                cakes = _cakeService.GetAllCakes().Where(c => c.Category.Name == category).ToList();
+                currentCategory = _categoryService.GetAllCategories().FirstOrDefault(c => c.Name == category)?.Name;
             }
             
             return View(new CakeListViewModel(cakes, currentCategory));
@@ -43,7 +44,7 @@ namespace CakeShop.Controllers
         
         public IActionResult Details(int id)
         {
-            var cake = _cakeRepository.GetCakeById(id);
+            var cake = _cakeService.GetCakeById(id);
             if (cake == null)
                 return NotFound();
 

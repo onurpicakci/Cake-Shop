@@ -1,5 +1,5 @@
 using DataAccess.Context;
-using DataAccess.Interface;
+using DataAccess.Interfaces;
 using Domain.Entity;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;

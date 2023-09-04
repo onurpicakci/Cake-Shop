@@ -42,9 +42,18 @@ namespace DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Feature2Level")
+                        .HasColumnType("int");
+
                     b.Property<string>("Feature3")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Feature3Level")
+                        .HasColumnType("int");
+
+                    b.Property<int>("FeatureLevel")
+                        .HasColumnType("int");
 
                     b.Property<string>("Title")
                         .IsRequired()
