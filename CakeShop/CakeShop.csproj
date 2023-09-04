@@ -36,4 +36,25 @@
       <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
     </ItemGroup>
 
+
+
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\Default\Header.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Default\PartialHead.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Default\Topbar.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\Default\Header.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\Default\PartialHead.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\Default\Topbar.cshtml" />
+    </ItemGroup>
+
+
+
+
+    <ItemGroup>
+      <AdditionalFiles Include="Views\Default\Header.cshtml" />
+      <AdditionalFiles Include="Views\Default\PartialHead.cshtml" />
+      <AdditionalFiles Include="Views\Default\Topbar.cshtml" />
+    </ItemGroup>
+
 </Project>

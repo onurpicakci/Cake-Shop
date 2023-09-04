@@ -16,12 +16,14 @@ builder.Services.AddScoped<ICartItemRepository, EfCartItemRepository>();
 builder.Services.AddScoped<IOrderRepository, EfOrderRepository>();
 builder.Services.AddScoped<ICategoryRepository, EfCategoryRepository>();
 builder.Services.AddScoped<IAboutRepository, EfAboutRepository>();
+builder.Services.AddScoped<ITestimonialRepository, EfTestimonialRepository>();
 
 builder.Services.AddScoped<ICakeService, CakeService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<ICartItemService, CartItemService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<IAboutService, AboutService>();
+builder.Services.AddScoped<ITestimonialService, TestimonialService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

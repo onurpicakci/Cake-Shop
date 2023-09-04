@@ -24,4 +24,6 @@ public class CakeShopDbContext : DbContext
     public DbSet<OrderDetail> OrderDetails { get; set; }
     
     public DbSet<Wishlist> Wishlists { get; set; }
+    
+    public DbSet<Testimonial> Testimonials { get; set; }
 }

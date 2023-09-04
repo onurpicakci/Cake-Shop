@@ -23,23 +23,10 @@ namespace CakeShop.Controllers
             return View(values);
         }
         
-        public ViewResult List(string category)
+        public ViewResult Shop()
         {
-            List<Cake> cakes;
-            string currentCategory;
-            
-            if (string.IsNullOrEmpty(category))
-            {
-                cakes = _cakeService.GetAllCakes().ToList();
-                currentCategory = "All cakes";
-            }
-            else
-            {
-                cakes = _cakeService.GetAllCakes().Where(c => c.Category.Name == category).ToList();
-                currentCategory = _categoryService.GetAllCategories().FirstOrDefault(c => c.Name == category)?.Name;
-            }
-            
-            return View(new CakeListViewModel(cakes, currentCategory));
+            var cakes = _cakeService.GetAllCakes().ToList();
+            return View(cakes);
         }
         
         public IActionResult Details(int id)
