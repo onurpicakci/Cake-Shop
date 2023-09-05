@@ -57,4 +57,15 @@
       <AdditionalFiles Include="Views\Default\Topbar.cshtml" />
     </ItemGroup>
 
+
+
+
+    <ItemGroup>
+      <None Include="wwwroot\js\ShoppingCart\Index.js" />
+    </ItemGroup>
+
+
+
+
+
 </Project>

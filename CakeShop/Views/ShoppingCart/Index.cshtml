@@ -53,6 +53,7 @@
                                 <td class="quantity__item">
                                     <div class="quantity">
                                         <div class="pro-qty">
+                                            <span data-id="@item.Cake.Id"></span>
                                             <input type="text" value="@item.Amount">
                                         </div>
                                     </div>
@@ -70,6 +71,11 @@
                     <div class="col-lg-6 col-md-6 col-sm-6">
                         <div class="continue__btn">
                             <a href="/Cake/Shop">Continue Shopping</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="continue__btn update__btn">
+                            <a class="btn" id="btn_clear_basket">Clear Basket</a>
                         </div>
                     </div>
                 </div>
@@ -94,17 +100,3 @@
     </div>
 </section>
 
-<!-- javascript -->
-
-@section Scripts{
-    <script>
-    $(".icon_close").click(function () {
-        var cakeId = $(this).attr("data-cake-id");
-        $.post("/ShoppingCart/RemoveFromShoppingCart", { "cakeId": cakeId }, function (data) {
-           if (data){
-                location.reload();
-              }
-        });
-    });
-    </script>
-}

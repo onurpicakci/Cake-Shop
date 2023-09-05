@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
 using Application.Interfaces;
 using CakeShop.Models;
@@ -39,6 +40,7 @@ namespace CakeShop.Controllers
             {
                 _cartItemService.AddToCart(selectedCake);
             }
+
             return RedirectToAction("Index");
         }
         
