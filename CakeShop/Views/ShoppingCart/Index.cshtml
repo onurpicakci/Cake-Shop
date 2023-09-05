@@ -2,47 +2,109 @@
 
 @{
     ViewBag.Title = "title";
-    Layout = "_Layout";
+    Layout = "~/Views/Shared/_NewLayout.cshtml";
 }
 
-<h3 class="my-5">
-    Shopping cart
-</h3>
-
-
-<div class="row gx-3">
-    <div class="col-8">
-        @foreach (var line in Model.ShoppingCart.ShoppingCartItems)
-        {
-            <div class="card shopping-cart-card mb-2">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="@line.Cake.ImageThumbnailUrl" class="img-fluid rounded-start p-2" alt="@line.Cake.Name">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-text">@line.Amount x @line.Cake.Name</h5>
-                            <div class="d-flex justify-content-between">
-                                <h6>@line.Cake.ShortDescription</h6>
-                                <h2>@line.Cake.Price.ToString("c")</h2>
-                            </div>
-                        </div>
-                    </div>
+<div class="breadcrumb-option">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="breadcrumb__text">
+                    <h2>Shopping cart</h2>
                 </div>
             </div>
-        }
-    </div>
-    <div class="col-4">
-        <div class="card shopping-cart-card p-3">
-            <div class="row">
-                <h4 class="col">Total:</h4>
-                <h4 class="col text-end">@Model.ShoppingCartTotal.ToString("c")</h4>
-            </div>
-            <hr/>
-            <div class="text-center d-grid">
-                <a class="btn btn-secondry" asp-controller="Order"
-                asp-action="Checkout"><h4>Check out now!</h4></a>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="breadcrumb__links">
+                    <a href="/Cake/Index">Home</a>
+                    <span>Shopping cart</span>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
+<section class="shopping-cart spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="shopping__cart__table">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @foreach (var item in Model.ShoppingCart.ShoppingCartItems)
+                        {
+                            <tr>
+                                <td class="product__cart__item">
+                                    <div class="product__cart__item__pic">
+                                        <img src="@item.Cake.ImageThumbnailUrl" alt="" width="90px" height="90px">
+                                    </div>
+                                    <div class="product__cart__item__text">
+                                        <h6>@item.Cake.Name</h6>
+                                        <h5>$@item.Cake.Price</h5>
+                                    </div>
+                                </td>
+                                <td class="quantity__item">
+                                    <div class="quantity">
+                                        <div class="pro-qty">
+                                            <input type="text" value="@item.Amount">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="cart__price">$ @(item.Cake.Price * item.Amount)</td>
+                                <td class="cart__close">
+                                    <span class="icon_close" data-cake-id="@item.Cake.Id"></span>
+                                </td>
+                            </tr>
+                        }
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="continue__btn">
+                            <a href="/Cake/Shop">Continue Shopping</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="cart__discount">
+                    <h6>Discount codes</h6>
+                    <form action="#">
+                        <input type="text" placeholder="Coupon code">
+                        <button type="submit">Apply</button>
+                    </form>
+                </div>
+                <div class="cart__total">
+                    <h6>Cart total</h6>
+                    <ul>
+                        <li>Total <span>$ @Model.ShoppingCartTotal.ToString("0.00")</span></li>
+                    </ul>
+                    <a href="#" class="primary-btn">Proceed to checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- javascript -->
+
+@section Scripts{
+    <script>
+    $(".icon_close").click(function () {
+        var cakeId = $(this).attr("data-cake-id");
+        $.post("/ShoppingCart/RemoveFromShoppingCart", { "cakeId": cakeId }, function (data) {
+           if (data){
+                location.reload();
+              }
+        });
+    });
+    </script>
+}

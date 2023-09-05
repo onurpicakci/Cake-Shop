@@ -14,7 +14,7 @@ public class CakeList : ViewComponent
     
     public IViewComponentResult Invoke()
     {
-        var cakes = _cakeService.GetAllCakes();
+        var cakes = _cakeService.GetAllCakes().ToList();
         return View(cakes);
     }
 }

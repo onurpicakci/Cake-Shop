@@ -13,12 +13,12 @@ namespace CakeShop.Controllers
 {
     public class ShoppingCartController : Controller
     {
-        private readonly ICakeService? _cakeService;
+        private readonly ICakeService _cakeService;
         private readonly ICartItemService _cartItemService;
 
         public ShoppingCartController(ICakeService cakeService, ICartItemService cartItemService)
         {
-            _cakeService = _cakeService;
+            _cakeService = cakeService;
             _cartItemService = cartItemService;
         }
 
@@ -33,7 +33,7 @@ namespace CakeShop.Controllers
         
         public RedirectToActionResult AddToShoppingCart(int cakeId)
         {
-            var selectedCake = _cakeService?.GetAllCakes().FirstOrDefault(x => x.Id == cakeId);
+            var selectedCake = _cakeService.GetAllCakes().FirstOrDefault(x => x.Id == cakeId);
 
             if (selectedCake != null)
             {
@@ -44,7 +44,7 @@ namespace CakeShop.Controllers
         
         public RedirectToActionResult RemoveFromShoppingCart(int cakeId)
         {
-            var selectedCake = _cakeService?.GetCakeById(cakeId);
+            var selectedCake = _cakeService.GetAllCakes().FirstOrDefault(x => x.Id == cakeId);
 
             if (selectedCake != null)
             {
@@ -52,5 +52,12 @@ namespace CakeShop.Controllers
             }
             return RedirectToAction("Index");
         }
+        
+        public RedirectToActionResult ClearCart()
+        {
+            _cartItemService.ClearCart();
+            return RedirectToAction("Index");
+        }
+        
     }
 }

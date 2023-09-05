@@ -11,7 +11,7 @@ public class CartItemRepository : ICartItemRepository
 {
     private readonly CakeShopDbContext _context;
  
-    public List<CartItem> ShoppingCartItems { get; set; }
+    public List<CartItem> ShoppingCartItems { get; set; } = default!;
     
     public string? ShoppingCartId { get; set; }
     
@@ -37,7 +37,7 @@ public class CartItemRepository : ICartItemRepository
     {
         var shoppingCartItem = _context.CartItems.SingleOrDefault(
             x=> x.Cake.Id == cake.Id && x.ShoppingCartId == ShoppingCartId);
-
+        
         if (shoppingCartItem == null)
         {
             shoppingCartItem = new CartItem

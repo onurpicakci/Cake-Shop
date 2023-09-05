@@ -1,4 +1,18 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿$.ajax({
+    type: "GET",
+    url: "/Header/GetCartTotal",
+    success: function (data) {
+        var cartTotal = data;
+        $('.cart__price span').text('$' + cartTotal.toFixed(2));
+    },
+})
 
-// Write your JavaScript code.
+$.ajax({
+    type: "GET",
+    url: "/Header/GetCartItems",
+    success: function (data) {
+        var cartItemsCount = data;
+        $('#basket_item_count').text(cartItemsCount);
+    },
+})
+    
