@@ -1,9 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Application.Interfaces;
-using DataAccess.Interfaces;
 using Domain.Entity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,8 +15,10 @@ namespace CakeShop.Controllers
             _cartItemService = cartItemService;
         }
         
+        [HttpGet]
         public IActionResult Checkout()
         {
+            ViewBag.t = _cartItemService.GetShoppingCartTotal();
             return View();
         }
         
@@ -41,6 +38,7 @@ namespace CakeShop.Controllers
                 _cartItemService.ClearCart();
                 return RedirectToAction("");
             }
+            
             return View(order);
         }
         

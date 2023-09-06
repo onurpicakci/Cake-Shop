@@ -21,6 +21,12 @@ public class Cake
     
     public string ImageUrl3 { get; set; }
     
+    public string ImageUrl4 { get; set; }
+    
+    public string ImageUrl5 { get; set; }
+    
+    public string ImageUrl6 { get; set; }
+    
     public string ImageThumbnailUrl { get; set; }
     public bool IsCakeOfTheWeek { get; set; }
     

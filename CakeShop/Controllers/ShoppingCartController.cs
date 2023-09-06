@@ -61,5 +61,11 @@ namespace CakeShop.Controllers
             return RedirectToAction("Index");
         }
         
+        public RedirectToActionResult ClearCartItem(int cakeId)
+        {
+            _cartItemService.ClearCartItem(cakeId);
+            return RedirectToAction("Index");
+        }
+        
     }
 }

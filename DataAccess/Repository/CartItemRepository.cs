@@ -99,4 +99,14 @@ public class CartItemRepository : ICartItemRepository
 
         return total;
     }
+    
+    public void ClearCartItem(int cakeId)
+    {
+        var cartItem = _context.CartItems.FirstOrDefault(x => x.Cake.Id == cakeId && x.ShoppingCartId == ShoppingCartId);
+        if (cartItem != null)
+        {
+            _context.CartItems.Remove(cartItem);
+            _context.SaveChanges();
+        }
+    }
 }

@@ -56,4 +56,5 @@ public class CakeRepository : ICakeRepository
             c.Name.ToLower().Contains(searchQuery.ToLower()) ||
             c.LongDescription.ToLower().Contains(searchQuery.ToLower()));
     }
+    
 }

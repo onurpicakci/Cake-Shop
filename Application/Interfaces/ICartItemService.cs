@@ -15,4 +15,6 @@ public interface ICartItemService
     decimal GetShoppingCartTotal();
     
     List<CartItem> ShoppingCartItems { get; set; }
+    
+    void ClearCartItem(int cakeId);
 }

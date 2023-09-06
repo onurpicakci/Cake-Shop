@@ -37,6 +37,11 @@ public class CartItemService : ICartItemService
     {
         return _cartItemRepository.GetShoppingCartTotal();
     }
+    
+    public void ClearCartItem(int cakeId)
+    {
+        _cartItemRepository.ClearCartItem(cakeId);
+    }
 
     public List<CartItem> ShoppingCartItems { get; set; }
 }

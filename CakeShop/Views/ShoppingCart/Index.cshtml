@@ -52,8 +52,7 @@
                                 </td>
                                 <td class="quantity__item">
                                     <div class="quantity">
-                                        <div class="pro-qty">
-                                            <span data-id="@item.Cake.Id"></span>
+                                        <div class="pro-qty" data-cakeId="@item.Cake.Id">
                                             <input type="text" value="@item.Amount">
                                         </div>
                                     </div>
@@ -93,7 +92,7 @@
                     <ul>
                         <li>Total <span>$ @Model.ShoppingCartTotal.ToString("0.00")</span></li>
                     </ul>
-                    <a href="#" class="primary-btn">Proceed to checkout</a>
+                    <a asp-controller="Order" asp-action="Checkout"  class="primary-btn">Proceed to checkout</a>
                 </div>
             </div>
         </div>

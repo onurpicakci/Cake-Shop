@@ -601,12 +601,36 @@
       "PackagePath": "staticwebassets/template/img/shop/cart/cart-4.jpg"
     },
     {
-      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/cheescake-detail-image.jpg",
-      "PackagePath": "staticwebassets/template/img/shop/cheescake-detail-image.jpg"
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/cheescake-detail.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/cheescake-detail.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/cheescake-detail2.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/cheescake-detail2.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/cheescake-detail3.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/cheescake-detail3.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/cheescake-detail4.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/cheescake-detail4.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/cheescake-detail5.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/cheescake-detail5.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/cheescake-detail6.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/cheescake-detail6.jpg"
     },
     {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/chocolate-cake-thumbnail.jpg",
       "PackagePath": "staticwebassets/template/img/shop/chocolate-cake-thumbnail.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/classic-cheesecake-with-strawberry-cherry-slices.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/classic-cheesecake-with-strawberry-cherry-slices.jpg"
     },
     {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/cupcake-thumbnail.jpg",
@@ -659,14 +683,6 @@
     {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/lemon-cheesecake-thumbnail.jpg",
       "PackagePath": "staticwebassets/template/img/shop/lemon-cheesecake-thumbnail.jpg"
-    },
-    {
-      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/lemoon-cheescake-detail-2.jpg",
-      "PackagePath": "staticwebassets/template/img/shop/lemoon-cheescake-detail-2.jpg"
-    },
-    {
-      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/lemoon-cheescake-detail-3.jpg",
-      "PackagePath": "staticwebassets/template/img/shop/lemoon-cheescake-detail-3.jpg"
     },
     {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/lemoon-cheescake.jpg",
