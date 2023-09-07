@@ -1,9 +1,10 @@
 using Domain.Entity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess.Context;
 
-public class CakeShopDbContext : DbContext
+public class CakeShopDbContext : IdentityDbContext
 {
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

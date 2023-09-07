@@ -1,3 +1,7 @@
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+
 <header class="header">
         <div class="header__top">
             <div class="container">
@@ -6,7 +10,14 @@
                         <div class="header__top__inner">
                             <div class="header__top__left">
                                 <ul>
-                                    <li><a href="#">Sign in</a> <span class="arrow_carrot-down"></span></li>
+                                    @if (SignInManager.IsSignedIn(User))
+                                    {
+                                        <span>@User.Identity.Name</span>
+                                    }
+                                    else
+                                    {
+                                        <li><a href="/Identity/Login/Index">Login</a> <span class="arrow_carrot-down"></span></li>
+                                    }
                                 </ul>
                             </div>
                             <div class="header__logo">

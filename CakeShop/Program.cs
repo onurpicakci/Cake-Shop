@@ -4,6 +4,7 @@ using CakeShop;
 using DataAccess.Context;
 using DataAccess.EntityFramework;
 using DataAccess.Interfaces;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,6 +29,11 @@ builder.Services.AddScoped<ITestimonialService, TestimonialService>();
 
 builder.Services.AddScoped<WishlistService>();
 
+builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+    .AddEntityFrameworkStores<CakeShopDbContext>()
+    .AddDefaultTokenProviders();
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -48,5 +54,13 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Cake}/{action=Index}/{id?}");
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name : "areas",
+        pattern : "{area:exists}/{controller=Login}/{action=Index}/{id?}"
+    );
+});
 
 app.Run();

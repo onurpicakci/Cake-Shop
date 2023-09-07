@@ -117,3 +117,10 @@ CakeShop/obj/Debug/net7.0/staticwebassets.build.json
 CakeShop/obj/Debug/net7.0/staticwebassets.development.json
 CakeShop/obj/Debug/net7.0/staticwebassets.pack.json
 CakeShop/obj/Debug/net7.0/staticwebassets/msbuild.CakeShop.Microsoft.AspNetCore.StaticWebAssets.props
+CakeShop/obj/project.packagespec.json
+CakeShop/obj/project.assets.json
+CakeShop/obj/Debug/net7.0/staticwebassets.development.json
+CakeShop/obj/Debug/net7.0/staticwebassets.build.json
+CakeShop/obj/Debug/net7.0/CakeShop.AssemblyInfo.cs
+CakeShop/obj/CakeShop.csproj.nuget.g.props
+CakeShop/obj/CakeShop.csproj.nuget.dgspec.json
