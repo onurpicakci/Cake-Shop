@@ -17,6 +17,7 @@ builder.Services.AddScoped<IOrderRepository, EfOrderRepository>();
 builder.Services.AddScoped<ICategoryRepository, EfCategoryRepository>();
 builder.Services.AddScoped<IAboutRepository, EfAboutRepository>();
 builder.Services.AddScoped<ITestimonialRepository, EfTestimonialRepository>();
+builder.Services.AddScoped<IWishlistRepository, EfWishlistRepository>();
 
 builder.Services.AddScoped<ICakeService, CakeService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
@@ -24,6 +25,9 @@ builder.Services.AddScoped<ICartItemService, CartItemService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<IAboutService, AboutService>();
 builder.Services.AddScoped<ITestimonialService, TestimonialService>();
+
+builder.Services.AddScoped<WishlistService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -43,6 +47,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Cake}/{action=Index}/{id?}");
 
 app.Run();

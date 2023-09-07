@@ -343,6 +343,9 @@ namespace DataAccess.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("CakeId")
+                        .HasColumnType("int");
+
                     b.Property<string>("ImageThumbnailUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -358,6 +361,8 @@ namespace DataAccess.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CakeId");
 
                     b.ToTable("Wishlists");
                 });
@@ -401,6 +406,17 @@ namespace DataAccess.Migrations
                     b.Navigation("Cake");
 
                     b.Navigation("Order");
+                });
+
+            modelBuilder.Entity("Domain.Entity.Wishlist", b =>
+                {
+                    b.HasOne("Domain.Entity.Cake", "Cake")
+                        .WithMany()
+                        .HasForeignKey("CakeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Cake");
                 });
 
             modelBuilder.Entity("Domain.Entity.Category", b =>

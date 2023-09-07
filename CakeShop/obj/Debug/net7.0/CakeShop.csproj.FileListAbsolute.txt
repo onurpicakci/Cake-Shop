@@ -521,9 +521,7 @@
 /Users/onurpicakci/Desktop/Cake-Shop/CakeShop/obj/Debug/net7.0/staticwebassets.pack.json
 /Users/onurpicakci/Desktop/Cake-Shop/CakeShop/obj/Debug/net7.0/staticwebassets.build.json
 /Users/onurpicakci/Desktop/Cake-Shop/CakeShop/obj/Debug/net7.0/staticwebassets.development.json
-/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/obj/Debug/net7.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /Users/onurpicakci/Desktop/Cake-Shop/CakeShop/obj/Debug/net7.0/scopedcss/bundle/CakeShop.styles.css
-/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/obj/Debug/net7.0/scopedcss/projectbundle/CakeShop.bundle.scp.css
 /Users/onurpicakci/Desktop/Cake-Shop/CakeShop/obj/Debug/net7.0/CakeShop.csproj.CopyComplete
 /Users/onurpicakci/Desktop/Cake-Shop/CakeShop/obj/Debug/net7.0/CakeShop.dll
 /Users/onurpicakci/Desktop/Cake-Shop/CakeShop/obj/Debug/net7.0/refint/CakeShop.dll

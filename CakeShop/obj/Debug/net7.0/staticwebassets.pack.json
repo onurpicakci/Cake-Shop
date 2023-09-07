@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/obj/Debug/net7.0/scopedcss/projectbundle/CakeShop.bundle.scp.css",
-      "PackagePath": "staticwebassets/CakeShop.bundle.scp.css"
-    },
-    {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/.DS_Store",
       "PackagePath": "staticwebassets/.DS_Store"
     },
@@ -19,6 +15,10 @@
     {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/js/ShoppingCart/Index.js",
       "PackagePath": "staticwebassets/js/ShoppingCart/Index.js"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/js/Wishlist/Index.js",
+      "PackagePath": "staticwebassets/js/Wishlist/Index.js"
     },
     {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/js/site.js",
@@ -413,6 +413,10 @@
       "PackagePath": "staticwebassets/template/img/.DS_Store"
     },
     {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/about-image.jpg",
+      "PackagePath": "staticwebassets/template/img/about-image.jpg"
+    },
+    {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/about-video.jpg",
       "PackagePath": "staticwebassets/template/img/about-video.jpg"
     },
@@ -517,8 +521,8 @@
       "PackagePath": "staticwebassets/template/img/class/class-6.jpg"
     },
     {
-      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/footer-bg.jpg",
-      "PackagePath": "staticwebassets/template/img/footer-bg.jpg"
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/footer-background.png",
+      "PackagePath": "staticwebassets/template/img/footer-background.png"
     },
     {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/footer-logo.png",

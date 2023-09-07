@@ -15,7 +15,6 @@ namespace CakeShop.Controllers
             _cartItemService = cartItemService;
         }
         
-        [HttpGet]
         public IActionResult Checkout()
         {
             ViewBag.t = _cartItemService.GetShoppingCartTotal();
@@ -25,18 +24,19 @@ namespace CakeShop.Controllers
         [HttpPost]
         public IActionResult Checkout(Order order)
         {
+            ViewBag.t = _cartItemService.GetShoppingCartTotal();
             var items = _cartItemService.GetShoppingCartItems();
             _cartItemService.ShoppingCartItems = items;
 
             if(_cartItemService.ShoppingCartItems.Count == 0)
             {
-                ModelState.AddModelError("", "Your cart is emtpy, add some pies first");
+                ModelState.AddModelError("", "Your cart is emtpy, add some cakes first");
             }
             if (ModelState.IsValid)
             {
                 _orderService.CreateOrder(order);
                 _cartItemService.ClearCart();
-                return RedirectToAction("");
+                return RedirectToAction("CheckoutComplete");
             }
             
             return View(order);
@@ -44,7 +44,7 @@ namespace CakeShop.Controllers
         
         public IActionResult CheckoutComplete()
         {
-            ViewBag.CheckoutCompleteMessage = "Thanks for you order. You'll soon enjoy our delicious pies!";
+            ViewBag.CheckoutCompleteMessage = "Thanks for you order. You'll soon enjoy our delicious cakes!";
             return View();
         }
     }

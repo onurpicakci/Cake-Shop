@@ -10,11 +10,13 @@ namespace CakeShop.Controllers
     {
         private readonly ICakeService _cakeService;
         private readonly ICategoryService  _categoryService;
+        private readonly IAboutService _aboutService;
         
-        public CakeController(ICakeService cakeService, ICategoryService  categoryService)
+        public CakeController(ICakeService cakeService, ICategoryService  categoryService, IAboutService aboutService)
         {
             _cakeService = cakeService;
             _categoryService = categoryService;
+            _aboutService = aboutService;
         }
 
         public IActionResult Index()
@@ -41,6 +43,12 @@ namespace CakeShop.Controllers
         public IActionResult Search()
         {
             return View();
+        }
+        
+        public IActionResult About()
+        {
+            var about = _aboutService.GetAllAbouts();
+            return View(about);
         }
     }
 }

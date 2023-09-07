@@ -83,7 +83,8 @@
                     <div class="product__details__option">
                         <a asp-controller="ShoppingCart" asp-action="AddToShoppingCart" 
                            asp-route-cakeId="@Model.Id" class="primary-btn">Add to cart</a>
-                        <a href="#" class="heart__btn">
+                        <a asp-controller="Wishlist" asp-action="AddToWishlist" 
+                           asp-route-id="@Model.Id" class="heart__btn">
                             <span class="icon_heart_alt"></span>
                         </a>
                     </div>

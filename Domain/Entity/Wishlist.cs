@@ -15,4 +15,8 @@ public class Wishlist
     
     public bool InStock { get; set; }
     
+    public Cake Cake { get; set; } = default!;
+    
+    public int CakeId { get; set; }
+
 }
