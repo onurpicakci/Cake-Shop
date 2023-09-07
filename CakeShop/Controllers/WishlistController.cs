@@ -44,5 +44,11 @@ namespace CakeShop.Controllers
             }
             return RedirectToAction("Index");
         }
+        
+        public IActionResult GetWishlistItems()
+        {
+            var total = _wishlistService.GetAllWishlists().Count();
+            return Json(total);
+        }
     }
 }

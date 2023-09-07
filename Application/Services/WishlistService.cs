@@ -18,9 +18,9 @@ public class WishlistService : IWishlistService
         _wishlistRepository.AddWishlist(cake);
     }
 
-    public void RemoveWishlist(Cake cake)
+    public int RemoveWishlist(Cake cake)
     {
-        _wishlistRepository.RemoveWishlist(cake);
+        return _wishlistRepository.RemoveWishlist(cake);
     }
 
     public IEnumerable<Wishlist> GetAllWishlists()

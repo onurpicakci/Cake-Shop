@@ -34,5 +34,6 @@ $(".pro-qty .dec.qtybtn").click(function () {
         }
     });
 });
+
     
     

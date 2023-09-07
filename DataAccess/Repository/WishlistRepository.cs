@@ -16,7 +16,7 @@ public class WishlistRepository : IWishlistRepository
    public void AddWishlist(Cake cake)
     {
         var wishlistItem = _context.Wishlists.SingleOrDefault(
-            x=> x.Id == cake.Id && x.CakeId == cake.Id);
+            x=> x.CakeId == cake.Id);
         
         if (wishlistItem == null)
         {
@@ -34,16 +34,19 @@ public class WishlistRepository : IWishlistRepository
         _context.SaveChanges();
     }
 
-    public void RemoveWishlist(Cake cake)
+    public int RemoveWishlist(Cake cake)
     {
         var wishlistItem = _context.Wishlists.SingleOrDefault(
-            x=> x.Id == cake.Id);
+            x=> x.CakeId == cake.Id);
+        
+        var localAmount = 0;
         
         if (wishlistItem != null)
         {
             _context.Wishlists.Remove(wishlistItem);
         }
         _context.SaveChanges();
+        return localAmount;
     }
 
     public IEnumerable<Wishlist> GetAllWishlists()

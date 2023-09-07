@@ -6,7 +6,7 @@ public interface IWishlistService
 {
     void AddWishlist(Cake cake);
     
-    void RemoveWishlist(Cake cake);
+    int RemoveWishlist(Cake cake);
     
     IEnumerable<Wishlist> GetAllWishlists();
 }

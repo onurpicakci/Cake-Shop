@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/js/Cake/Index.js",
+      "PackagePath": "staticwebassets/js/Cake/Index.js"
+    },
+    {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/js/ShoppingCart/Index.js",
       "PackagePath": "staticwebassets/js/ShoppingCart/Index.js"
     },
@@ -541,8 +545,20 @@
       "PackagePath": "staticwebassets/template/img/hero/section-background-2.jpg"
     },
     {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/icon/.DS_Store",
+      "PackagePath": "staticwebassets/template/img/icon/.DS_Store"
+    },
+    {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/icon/cart.png",
       "PackagePath": "staticwebassets/template/img/icon/cart.png"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/icon/heart-orange-icon.png",
+      "PackagePath": "staticwebassets/template/img/icon/heart-orange-icon.png"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/icon/heart-white.png",
+      "PackagePath": "staticwebassets/template/img/icon/heart-white.png"
     },
     {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/icon/heart.png",

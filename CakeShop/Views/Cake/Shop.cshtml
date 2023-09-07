@@ -45,8 +45,7 @@
                             </h6>
                             <div class="product__item__price">$@item.Price</div>
                             <div class="cart_add">
-                                <a id="add_to_cart" asp-controller="ShoppingCart" asp-action="AddToShoppingCart"
-                                   asp-route-cakeId="@item.Id">Add to cart</a>
+                                <a href="#" class="add-to-cart-btn" data-cake="@item.Id" >Add to cart</a>
                             </div>
                         </div>
                     </div>
