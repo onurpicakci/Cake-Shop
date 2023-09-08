@@ -19,6 +19,7 @@ builder.Services.AddScoped<ICategoryRepository, EfCategoryRepository>();
 builder.Services.AddScoped<IAboutRepository, EfAboutRepository>();
 builder.Services.AddScoped<ITestimonialRepository, EfTestimonialRepository>();
 builder.Services.AddScoped<IWishlistRepository, EfWishlistRepository>();
+builder.Services.AddScoped<IContactRepository, EfContactRepository>();
 
 builder.Services.AddScoped<ICakeService, CakeService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
@@ -26,6 +27,7 @@ builder.Services.AddScoped<ICartItemService, CartItemService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<IAboutService, AboutService>();
 builder.Services.AddScoped<ITestimonialService, TestimonialService>();
+builder.Services.AddScoped<IContactService, ContactService>();
 
 builder.Services.AddScoped<WishlistService>();
 

@@ -7,3 +7,5 @@ $(".heart__btn").click(function (e) {
         }
     });
 });
+
+// search cake

@@ -1,0 +1,118 @@
+@using Domain.Entity
+@model Contact
+
+@{
+    ViewBag.Title = "title";
+    Layout = "~/Views/Shared/_NewLayout.cshtml";
+}
+
+<section class="contact spad">
+        <div class="container">
+            <div class="map">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-4 col-md-7">
+                            <div class="map__inner">
+                                <h6>Istanbul</h6>
+                                <ul>
+                                    <li>Address: 123 Delicious Street, Bakery District, Sugar Lane No: 45, Chocolateville, Istanbul, Turkey</li>
+                                    <li>Email: cakeshop@support.com</li>
+                                    <li>Phone: +1 800-786-1000</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="map__iframe">
+                    <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1425&amp;height=300&amp;hl=en&amp;q=Istanbul&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+            <div class="contact__address">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="contact__address__item">
+                            <h6>istanbul</h6>
+                            <ul>
+                                <li>
+                                    <span class="icon_pin_alt"></span>
+                                    <p>Address: 123 Delicious Street, Sugar Lane No: 45, Istanbul</p>
+                                </li>
+                                <li><span class="icon_headphones"></span>
+                                    <p>+1 800-786-1000</p>
+                                </li>
+                                <li><span class="icon_mail_alt"></span>
+                                    <p>cakeshop@support.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="contact__address__item">
+                            <h6>bursa</h6>
+                            <ul>
+                                <li>
+                                    <span class="icon_pin_alt"></span>
+                                    <p>Address: 16 Delicious Street, Sugar Lane No: 16, Bursa</p>
+                                </li>
+                                <li><span class="icon_headphones"></span>
+                                    <p>+1 800-786-1000</p>
+                                </li>
+                                <li><span class="icon_mail_alt"></span>
+                                    <p>cakeshopbursa@support.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="contact__address__item">
+                            <h6>ankara</h6>
+                            <ul>
+                                <li>
+                                    <span class="icon_pin_alt"></span>
+                                    <p>Address: 06 Delicious Street, Sugar Lane No: 06, Ankara</p>
+                                </li>
+                                <li><span class="icon_headphones"></span>
+                                    <p>+1 800-786-1000</p>
+                                </li>
+                                <li><span class="icon_mail_alt"></span>
+                                    <p>cakeshopankara@support.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="contact__text">
+                        <h3>Contact With us</h3>
+                        <ul>
+                            <li>Representatives or Advisors are available:</li>
+                            <li>Mon-Fri: 5:00am to 9:00pm</li>
+                            <li>Sat-Sun: 6:00am to 9:00pm</li>
+                        </ul>
+                        <img src="img/cake-piece.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="contact__form">
+                        <form asp-action="Index" method="post" role="form">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input asp-for="Name" type="text" placeholder="Name">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input asp-for="Email" type="text" placeholder="Email">
+                                </div>
+                                <div class="col-lg-12">
+                                    <textarea asp-for="Message" placeholder="Message"></textarea>
+                                    <button type="submit" class="site-btn">Send Us</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+

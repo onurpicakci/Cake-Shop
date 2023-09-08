@@ -45,10 +45,15 @@ namespace CakeShop.Controllers
             return View();
         }
         
-        public IActionResult About()
+        [HttpPost]
+        public IActionResult Search(string searchKey)
         {
-            var about = _aboutService.GetAllAbouts();
-            return View(about);
+            var cakes = _cakeService.SearchCakes(searchKey);
+            if (cakes == null)
+                return NotFound();
+
+            return View(cakes);
         }
+        
     }
 }
