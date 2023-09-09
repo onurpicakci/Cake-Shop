@@ -26,31 +26,46 @@
 
 <section class="shop spad">
     <div class="container">
-        <div class="row">
-            @foreach (var item in Model)
-            {
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="product__item">
-                        <a href="/Cake/Details/@item.Id">
-                            <div class="product__item__pic set-bg" data-setbg="@item.ImageThumbnailUrl">
-                                <div class="product__label">
-                                    <span>@item.Category.Name</span>
+        <div class="shop__option">
+            <div class="row">
+                <div class="col-lg-7 col-md-7">
+                    <div class="shop__option__search">
+                        <input id="search-input" type="text"/>
+                        <button id="search-button" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        <button id="clear-search" type="submit">
+                            <i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="row" id="query-list">
+                @foreach (var item in Model)
+                {
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product__item">
+                            <a href="/Cake/Details/@item.Id">
+                                <div class="product__item__pic set-bg" data-setbg="@item.ImageThumbnailUrl">
+                                    <div class="product__label">
+                                        <span>@item.Category.Name</span>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
 
-                        <div class="product__item__text">
-                            <h6>
-                                <a href="/Cake/Details/@item.Id">@item.Name</a>
-                            </h6>
-                            <div class="product__item__price">$@item.Price</div>
-                            <div class="cart_add">
-                                <a href="#" class="add-to-cart-btn" data-cake="@item.Id">Add to cart</a>
+                            <div class="product__item__text">
+                                <h6>
+                                    <a href="/Cake/Details/@item.Id">@item.Name</a>
+                                </h6>
+                                <div class="product__item__price">$@item.Price</div>
+                                <div class="cart_add">
+                                    <a href="#" class="add-to-cart-btn" data-cake="@item.Id">Add to cart</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            }
-        </div>
+                }
+            </div>
     </div>
 </section>

@@ -11,9 +11,7 @@ $.ajax({
     type: "GET",
     url: "/Wishlist/GetWishlistItems/",
     success: function (data) {
-        var wishlistItemsCount = parseInt(data);
         var newIconPath = "/template/img/icon/heart-orange-icon.png";
-        if (wishlistItemsCount > 0) {
             $(document).ready(function () {
                 $("#heartIcon").hover(function () {
                     $(this).attr("src", newIconPath);
@@ -23,7 +21,6 @@ $.ajax({
                 });
             });
         }
-    }
 });
 
 

@@ -29,6 +29,7 @@
     <ItemGroup>
       <Folder Include="Areas\Identity\Controllers\" />
       <Folder Include="Areas\Identity\Data\" />
+      <Folder Include="Controllers\Api\" />
       <Folder Include="wwwroot\template\" />
     </ItemGroup>
 
