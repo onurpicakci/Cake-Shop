@@ -49,5 +49,17 @@ namespace CakeShop.Controllers.Api
             return new JsonResult(cakes);
         }
         
+        [HttpGet("category/{categoryName}")]
+        public IActionResult GetCakesByCategoryName(string categoryName)
+        {
+            IEnumerable<Cake> cakes = new List<Cake>();
+
+            if (!string.IsNullOrEmpty(categoryName))
+            {
+                cakes = _cakeService.GetCakesByCategoryName(categoryName);
+            }
+            return new JsonResult(cakes);
+        }
+        
     }
 }

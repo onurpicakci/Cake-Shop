@@ -56,5 +56,9 @@ public class CakeRepository : ICakeRepository
             c.Name.ToLower().Contains(searchQuery.ToLower()) ||
             c.LongDescription.ToLower().Contains(searchQuery.ToLower()));
     }
-    
+
+    public IEnumerable<Cake> GetCakesByCategoryName(string categoryName)
+    {
+        return _context.Cakes.Include(c => c.Category).Where(c => c.Category.Name == categoryName).ToList();
+    }
 }

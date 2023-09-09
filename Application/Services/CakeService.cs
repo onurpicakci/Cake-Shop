@@ -47,4 +47,9 @@ public class CakeService : ICakeService
     {
         return _cakeRepository.SearchCakes(searchQuery);
     }
+
+    public IEnumerable<Cake> GetCakesByCategoryName(string categoryName)
+    {
+        return _cakeRepository.GetCakesByCategoryName(categoryName);
+    }
 }

@@ -39,21 +39,5 @@ namespace CakeShop.Controllers
 
             return View(cake);
         }
-        
-        public IActionResult Search()
-        {
-            return View();
-        }
-        
-        [HttpPost]
-        public IActionResult Search(string searchKey)
-        {
-            var cakes = _cakeService.SearchCakes(searchKey);
-            if (cakes == null)
-                return NotFound();
-
-            return View(cakes);
-        }
-        
     }
 }

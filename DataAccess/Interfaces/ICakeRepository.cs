@@ -15,4 +15,6 @@ public interface ICakeRepository
     IEnumerable<Cake> CakeOfTheWeek();
     Cake? GetCakeById(int cakeId);
     IEnumerable<Cake> SearchCakes(string searchQuery);
+    
+    IEnumerable<Cake> GetCakesByCategoryName(string categoryName);
 }

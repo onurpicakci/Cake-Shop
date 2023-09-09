@@ -6,9 +6,16 @@ namespace DataAccess.Repository;
 
 public class CategoryRepository : ICategoryRepository
 {
+    private readonly CakeShopDbContext _context;
+
+    public CategoryRepository(CakeShopDbContext context)
+    {
+        _context = context;
+    }
+
     public List<Category> GetAllCategories()
     {
-        using var c = new CakeShopDbContext();
-        return c.Categories.ToList();
+        return _context.Categories.ToList();
     }
+    
 }
