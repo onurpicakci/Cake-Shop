@@ -37,6 +37,9 @@
                         <div class="checkout__input">
                             <p>Password<span>*</span></p>
                             <input type="text" asp-for="Password">
+                            <button class="btn btn-secondary password-visibility-button" type="button">
+                                <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                            </button>
                             <span asp-validation-for="Password" class="text-danger"></span>
                         </div>
                     </div>

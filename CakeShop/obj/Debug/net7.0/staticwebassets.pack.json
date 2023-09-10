@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets/js/Cake/Index.js"
     },
     {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/js/Login/Index.js",
+      "PackagePath": "staticwebassets/js/Login/Index.js"
+    },
+    {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/js/ShoppingCart/Index.js",
       "PackagePath": "staticwebassets/js/ShoppingCart/Index.js"
     },

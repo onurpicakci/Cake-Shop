@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EB/iFA6ZWGFu9vYQiP+JC0W/Dx9GcYkAhcdnXsp17JQ=",
+  "Hash": "+wpbFjTXWI1jvN0B3q4nta8tc7GCjhxW+7+taUgPjwg=",
   "Source": "CakeShop",
   "BasePath": "_content/CakeShop",
   "Mode": "Default",
@@ -1154,6 +1154,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/Cake/Index.js"
+    },
+    {
+      "Identity": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/js/Login/Index.js",
+      "SourceId": "CakeShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/",
+      "BasePath": "_content/CakeShop",
+      "RelativePath": "js/Login/Index.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/Login/Index.js"
     },
     {
       "Identity": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/js/ShoppingCart/Index.js",
