@@ -52,10 +52,7 @@ public class Order
     [DataType(DataType.EmailAddress)]
     [Display(Name = "Email")]
     public string Email { get; set; }
-    
-    
     public decimal OrderTotal { get; set; }
     public DateTime OrderPlaced { get; set; }
-    
     public List<OrderDetail>? OrderDetails { get; set; }
 }

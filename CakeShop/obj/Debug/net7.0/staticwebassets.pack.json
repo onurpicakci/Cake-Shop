@@ -9,6 +9,18 @@
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/error-page/.DS_Store",
+      "PackagePath": "staticwebassets/error-page/.DS_Store"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/error-page/css/style.css",
+      "PackagePath": "staticwebassets/error-page/css/style.css"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/error-page/img/bg.jpg",
+      "PackagePath": "staticwebassets/error-page/img/bg.jpg"
+    },
+    {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
     },
