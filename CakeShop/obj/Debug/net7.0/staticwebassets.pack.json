@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets/.DS_Store"
     },
     {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/admin/.DS_Store",
+      "PackagePath": "staticwebassets/admin/.DS_Store"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/admin/package.json",
+      "PackagePath": "staticwebassets/admin/package.json"
+    },
+    {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
@@ -31,6 +39,10 @@
     {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/js/Login/Index.js",
       "PackagePath": "staticwebassets/js/Login/Index.js"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/js/Order/Index.js",
+      "PackagePath": "staticwebassets/js/Order/Index.js"
     },
     {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/js/ShoppingCart/Index.js",
@@ -307,30 +319,6 @@
     {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/Source/jquery-nice-select-1.1.0.zip",
       "PackagePath": "staticwebassets/template/Source/jquery-nice-select-1.1.0.zip"
-    },
-    {
-      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/about.html",
-      "PackagePath": "staticwebassets/template/about.html"
-    },
-    {
-      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/blog-details.html",
-      "PackagePath": "staticwebassets/template/blog-details.html"
-    },
-    {
-      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/blog.html",
-      "PackagePath": "staticwebassets/template/blog.html"
-    },
-    {
-      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/checkout.html",
-      "PackagePath": "staticwebassets/template/checkout.html"
-    },
-    {
-      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/class.html",
-      "PackagePath": "staticwebassets/template/class.html"
-    },
-    {
-      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/contact.html",
-      "PackagePath": "staticwebassets/template/contact.html"
     },
     {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/css/barfiller.css",
@@ -809,10 +797,6 @@
       "PackagePath": "staticwebassets/template/img/testimonial/ta-2.jpg"
     },
     {
-      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/index.html",
-      "PackagePath": "staticwebassets/template/index.html"
-    },
-    {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/js/bootstrap.min.js",
       "PackagePath": "staticwebassets/template/js/bootstrap.min.js"
     },
@@ -847,14 +831,6 @@
     {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/js/owl.carousel.min.js",
       "PackagePath": "staticwebassets/template/js/owl.carousel.min.js"
-    },
-    {
-      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/main.html",
-      "PackagePath": "staticwebassets/template/main.html"
-    },
-    {
-      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/readme.txt",
-      "PackagePath": "staticwebassets/template/readme.txt"
     },
     {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/sass/_about.scss",
@@ -943,22 +919,6 @@
     {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/sass/style.scss",
       "PackagePath": "staticwebassets/template/sass/style.scss"
-    },
-    {
-      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/shop-details.html",
-      "PackagePath": "staticwebassets/template/shop-details.html"
-    },
-    {
-      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/shop.html",
-      "PackagePath": "staticwebassets/template/shop.html"
-    },
-    {
-      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/shoping-cart.html",
-      "PackagePath": "staticwebassets/template/shoping-cart.html"
-    },
-    {
-      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/wisslist.html",
-      "PackagePath": "staticwebassets/template/wisslist.html"
     },
     {
       "Id": "obj/Debug/net7.0/staticwebassets/msbuild.CakeShop.Microsoft.AspNetCore.StaticWebAssets.props",

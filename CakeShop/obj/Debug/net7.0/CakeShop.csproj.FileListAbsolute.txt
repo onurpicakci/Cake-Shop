@@ -530,3 +530,5 @@
 /Users/onurpicakci/Desktop/Cake-Shop/CakeShop/obj/Debug/net7.0/ref/CakeShop.dll
 /Users/onurpicakci/Desktop/Cake-Shop/CakeShop/bin/Debug/net7.0/Application.dll
 /Users/onurpicakci/Desktop/Cake-Shop/CakeShop/bin/Debug/net7.0/Application.pdb
+/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/bin/Debug/net7.0/BouncyCastle.Crypto.dll
+/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/bin/Debug/net7.0/itextsharp.dll

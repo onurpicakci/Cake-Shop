@@ -17,4 +17,9 @@ public class OrderService : IOrderService
     {
         _orderRepository.CreateOrder(order);
     }
+
+    public Order GetOrderById(int id)
+    {
+        return _orderRepository.GetOrderById(id);
+    }
 }

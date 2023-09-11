@@ -1,5 +1,4 @@
-@using Domain.Entity
-@model Order
+@model CakeShop.ViewModels.CheckoutViewModel
 @{
     Layout = "~/Views/Shared/_NewLayout.cshtml";
 }
@@ -23,102 +22,120 @@
 
 
 <section class="checkout spad">
-        <div class="container">
-            <div class="checkout__form">
-                <form asp-action="Checkout" method="post" role="form">
-                    <div class="row">
-                        <div class="col-lg-8 col-md-6">
-                            <h6 class="coupon__code"><span class="icon_tag_alt"></span> Have a coupon?
-                                <a href="#">Click
-                                    here</a> to enter your code</h6>
-                            <h6 class="checkout__title">Order Details</h6>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="checkout__input">
-                                        <p>First Name<span>*</span></p>
-                                        <input type="text" asp-for="FirstName">
-                                        <span asp-validation-for="FirstName" class="text-danger"></span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="checkout__input">
-                                        <p>Last Name<span>*</span></p>
-                                        <input type="text" asp-for="LastName">
-                                        <span asp-validation-for="LastName" class="text-danger"></span>
-                                    </div>
+    <div class="container">
+        <div class="checkout__form">
+            <form asp-action="Checkout" method="post" role="form">
+                <input type="hidden" data-order-id="@Model.Order.Id"/>
+                <div class="row">
+                    <div class="col-lg-8 col-md-6">
+                        <h6 class="coupon__code">
+                            <span class="icon_tag_alt"></span> Have a coupon?
+                            <a href="#">
+                                Click
+                                here
+                            </a> to enter your code
+                        </h6>
+                        <h6 class="checkout__title">Order Details</h6>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="checkout__input">
+                                    <p>First Name<span>*</span></p>
+                                    <input type="text" asp-for="@Model.Order.FirstName">
+                                    <span asp-validation-for="@Model.Order.FirstName" class="text-danger"></span>
                                 </div>
                             </div>
-                            <div class="checkout__input">
-                                <p>Country<span>*</span></p>
-                                <input type="text" asp-for="Country">
-                                <span asp-validation-for="Country" class="text-danger"></span>
-                            </div>
-                            <div class="checkout__input">
-                                <p>Address<span>*</span></p>
-                                <input type="text" placeholder="Street Address" class="checkout__input__add" asp-for="AddressLine1">
-                                <span asp-validation-for="AddressLine1" class="text-danger"></span>
-                                <input type="text" placeholder="Apartment, suite, unite ect" asp-for="AddressLine2">
-                                <span asp-validation-for="AddressLine2" class="text-danger"></span>
-                            </div>
-                            <div class="checkout__input">
-                                <p>Town/City<span>*</span></p>
-                                <input type="text" asp-for="City">
-                                <span asp-validation-for="City" class="text-danger"></span>
-                            </div>
-                            <div class="checkout__input">
-                                <p>Country<span>*</span></p>
-                                <input type="text" asp-for="Country">
-                                <span asp-validation-for="Country" class="text-danger"></span>
-                            </div>
-                            <div class="checkout__input">
-                                <p>State<span>*</span></p>
-                                <input type="text" asp-for="State">
-                                <span asp-validation-for="State" class="text-danger"></span>
-                            </div>
-                            
-                            <div class="checkout__input">
-                                <p>Postcode / ZIP<span>*</span></p>
-                                <input type="text" asp-for="ZipCode">
-                                <span asp-validation-for="ZipCode" class="text-danger"></span>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="checkout__input">
-                                        <p>Phone<span>*</span></p>
-                                        <input type="text" asp-for="PhoneNumber">
-                                        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
-                                    </div>
+                            <div class="col-lg-6">
+                                <div class="checkout__input">
+                                    <p>Last Name<span>*</span></p>
+                                    <input type="text" asp-for="@Model.Order.LastName">
+                                    <span asp-validation-for="@Model.Order.LastName" class="text-danger"></span>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="checkout__input">
-                                        <p>Email<span>*</span></p>
-                                        <input type="text" asp-for="Email">
-                                        <span asp-validation-for="Email" class="text-danger"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="checkout__input__checkbox">
-                                <label for="acc">
-                                    Create an account?
-                                    <input type="checkbox" id="acc">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <p>Create an account by entering the information below. If you are a returning customer
-                                    please login at the top of the page</p>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="checkout__order">
-                                <ul class="checkout__total__all">
-                                    <li>Total <span>$ @ViewBag.t.ToString("0.00")</span></li>
-                                </ul>
-                                <p>Lorem ipsum dolor sit amet, consectetur adip elit, sed do eiusmod tempor incididunt
-                                    ut labore et dolore magna aliqua.</p>
-                                <button type="submit" class="site-btn">PLACE ORDER</button>
+                        <div class="checkout__input">
+                            <p>Country<span>*</span></p>
+                            <input type="text" asp-for="@Model.Order.Country">
+                            <span asp-validation-for="@Model.Order.Country" class="text-danger"></span>
+                        </div>
+                        <div class="checkout__input">
+                            <p>Address<span>*</span></p>
+                            <input type="text" placeholder="Street Address" class="checkout__input__add" asp-for="@Model.Order.AddressLine1">
+                            <span asp-validation-for="@Model.Order.AddressLine1" class="text-danger"></span>
+                            <input type="text" placeholder="Apartment, suite, unite ect" asp-for="@Model.Order.AddressLine2">
+                            <span asp-validation-for="@Model.Order.AddressLine2" class="text-danger"></span>
+                        </div>
+                        <div class="checkout__input">
+                            <p>Town/City<span>*</span></p>
+                            <input type="text" asp-for="@Model.Order.City">
+                            <span asp-validation-for="@Model.Order.City" class="text-danger"></span>
+                        </div>
+                        <div class="checkout__input">
+                            <p>Country<span>*</span></p>
+                            <input type="text" asp-for="@Model.Order.Country">
+                            <span asp-validation-for="@Model.Order.Country" class="text-danger"></span>
+                        </div>
+                        <div class="checkout__input">
+                            <p>State<span>*</span></p>
+                            <input type="text" asp-for="@Model.Order.State">
+                            <span asp-validation-for="@Model.Order.State" class="text-danger"></span>
+                        </div>
+
+                        <div class="checkout__input">
+                            <p>Postcode / ZIP<span>*</span></p>
+                            <input type="text" asp-for="@Model.Order.ZipCode">
+                            <span asp-validation-for="@Model.Order.ZipCode" class="text-danger"></span>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="checkout__input">
+                                    <p>Phone<span>*</span></p>
+                                    <input type="text" asp-for="@Model.Order.PhoneNumber">
+                                    <span asp-validation-for="@Model.Order.PhoneNumber" class="text-danger"></span>
+                                </div>
                             </div>
+                            <div class="col-lg-6">
+                                <div class="checkout__input">
+                                    <p>Email<span>*</span></p>
+                                    <input type="text" asp-for="@Model.Order.Email">
+                                    <span asp-validation-for="@Model.Order.Email" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkout__input__checkbox">
+                            <label for="acc">
+                                Create an account?
+                                <input type="checkbox" id="acc">
+                                <span class="checkmark"></span>
+                            </label>
+                            <p>
+                                Create an account by entering the information below. If you are a returning customer
+                                please login at the top of the page
+                            </p>
                         </div>
                     </div>
-                </form>
-            </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="checkout__order">
+                            <h6 class="order__title">Your order</h6>
+                            <div class="checkout__order__products">Product <span>Total</span></div>
+                            @foreach (var item in Model.CartItems)
+                            {
+                                <ul class="checkout__total__products">
+                                    <li>
+                                        @item.Cake.Name <span>$ @item.Cake.Price</span>
+                                    </li>
+                                </ul>
+                            }
+                            <ul class="checkout__total__all">
+                                <li>Total <span>$ @Model.ShoppingCartTotal.ToString("0.00")</span></li>
+                            </ul>
+                            <p>
+                                "When you complete your order, it will be prepared and shipped as soon as possible. You can use your account to track the status and updates of your order. If you have any questions or requests, please don't hesitate to contact us. Thank you!"
+                            </p>
+                            <button type="submit" class="site-btn">PLACE ORDER</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
-    </section>
+    </div>
+</section>

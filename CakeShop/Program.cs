@@ -45,6 +45,9 @@ builder.Services.ConfigureApplicationCookie(options =>
 builder.Services.AddControllers().AddJsonOptions(
     x => x.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles);
 
+builder.Services.AddSession();
+builder.Services.AddDistributedMemoryCache();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -58,7 +61,7 @@ if (!app.Environment.IsDevelopment())
 app.UseStatusCodePagesWithReExecute("/Error/Index");
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
+app.UseSession();
 app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();

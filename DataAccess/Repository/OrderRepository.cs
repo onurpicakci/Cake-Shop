@@ -1,6 +1,7 @@
 using DataAccess.Context;
 using DataAccess.Interfaces;
 using Domain.Entity;
+using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess.Repository;
 
@@ -35,5 +36,13 @@ public class OrderRepository : IOrderRepository
         _context.Orders.Add(order);
         
         _context.SaveChanges();
+    }
+
+    public Order GetOrderById(int id)
+    {
+        return _context.Orders
+            .Include(o => o.OrderDetails)
+            .ThenInclude(o => o.Cake)
+            .FirstOrDefault(o => o.Id == id);
     }
 }
