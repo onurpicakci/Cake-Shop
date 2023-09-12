@@ -22,10 +22,17 @@
 </div>
 
 <div class="container">
-    <div class="row">
-        <h3 class="my-5 ml-3">
-            @ViewBag.CheckoutCompleteMessage
-        </h3>
-        <a href="@Url.Action("DownloadInvoice", "Order")">Download Invoice</a>
+    <div class="row mt-5">
+        <div class="col-md-8 offset-md-2 text-center">
+            <h2 class="mb-4 thank-you-heading">Thank You for Your Order!</h2>
+            <p class="order-received-text">Your order has been received and is being processed with care. We appreciate your business.</p>
+            <p class="contact-info-text">If you have any questions or need assistance, please feel free to contact us.</p>
+        </div>
+    </div>
+    <div class="row mt-3 mb-5">
+        <div class="col-md-8 offset-md-2 text-center">
+            <a href="@Url.Action("DownloadInvoice", "Order")" class="btn btn-dark">Download Invoice</a>
+        </div>
     </div>
 </div>
+

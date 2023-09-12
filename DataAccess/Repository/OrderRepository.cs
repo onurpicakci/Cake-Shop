@@ -45,4 +45,9 @@ public class OrderRepository : IOrderRepository
             .ThenInclude(o => o.Cake)
             .FirstOrDefault(o => o.Id == id);
     }
+
+    public int GetLastOrderId()
+    {
+        return _context.Orders.OrderByDescending(x => x.OrderPlaced).FirstOrDefault().Id;
+    }
 }

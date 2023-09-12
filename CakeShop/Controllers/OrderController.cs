@@ -54,8 +54,6 @@ namespace CakeShop.Controllers
                 return RedirectToAction("CheckoutComplete");
             }
             
-            HttpContext.Session.SetInt32("OrderId", order.Id);
-
             return View(order);
         }
 
@@ -67,8 +65,7 @@ namespace CakeShop.Controllers
 
         public IActionResult DownloadInvoice()
         {
-            int orderId = HttpContext.Session.GetInt32("OrderId") ?? 0;
-
+            int orderId = _orderService.GetLastOrderId();
             using (MemoryStream memoryStream = new MemoryStream())
             {
                 Order order = _orderService.GetOrderById(orderId);
@@ -76,18 +73,66 @@ namespace CakeShop.Controllers
                 PdfWriter writer = PdfWriter.GetInstance(document, memoryStream);
 
                 document.Open();
-                document.Add(new Paragraph("Invoice"));
-                document.Add(new Paragraph("Order Id: " + order.Id));
-                document.Add(new Paragraph("Order Placed: " + order.OrderPlaced));
-                document.Add(new Paragraph("Order Total: " + order.OrderTotal));
-                document.Add(new Paragraph("Order Details: "));
+                
+                Font titleFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 18, BaseColor.BLACK);
+                Paragraph title = new Paragraph("Invoice", titleFont);
+                title.Alignment = Element.ALIGN_CENTER;
+                document.Add(title);
+                
+                Paragraph orderInfo = new Paragraph($"Order No: {order.Id}");
+                orderInfo.Alignment = Element.ALIGN_CENTER;
+                document.Add(orderInfo);
+                
+                Paragraph customerInfo = new Paragraph($"Customer: {order.FirstName} {order.LastName}");
+                document.Add(customerInfo);
+                
+                PdfPTable table = new PdfPTable(3);
+                table.WidthPercentage = 100;
+                table.SpacingBefore = 10f;
+                table.SpacingAfter = 10f;
+               
+                PdfPCell cell1 = new PdfPCell(new Phrase("Product Name"));
+                cell1.BackgroundColor = new BaseColor(240, 240, 240);
+                table.AddCell(cell1);
+                
+                PdfPCell cell2 = new PdfPCell(new Phrase("Amount"));
+                cell2.BackgroundColor = new BaseColor(240, 240, 240);
+                table.AddCell(cell2);
+                
+                PdfPCell cell3 = new PdfPCell(new Phrase("Price"));
+                cell3.BackgroundColor = new BaseColor(240, 240, 240);
+                table.AddCell(cell3);
+                
                 foreach (var orderDetail in order.OrderDetails)
                 {
-                    document.Add(new Paragraph("Cake Id: " + orderDetail.CakeId));
-                    document.Add(new Paragraph("Amount: " + orderDetail.Amount));
-                    document.Add(new Paragraph("Price: " + orderDetail.Price));
+                    table.AddCell(orderDetail.Cake.Name);
+                    table.AddCell(orderDetail.Amount.ToString());
+                    table.AddCell("$" + orderDetail.Price.ToString());
                 }
+                
+                document.Add(table);
+                
+                Paragraph address = new Paragraph($"\n{order.AddressLine1}" +
+                                                  $"\n{order.AddressLine2} " +
+                                                  $"\n{order.City }" +
+                                                  $" / {order.Country}" +
+                                                  $"\n{order.State}" +
+                                                  $" / {order.ZipCode}");
+                
+                address.Alignment = Element.ALIGN_LEFT;
+                
+                document.Add(address);
+                
+                // total
+                
+                decimal totalAmount = order.OrderTotal;
+                string formattedTotal = string.Format("{0:C}", totalAmount);
+                Font totalFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 16, BaseColor.BLACK);
+                Paragraph total = new Paragraph($"Total: ${formattedTotal}", totalFont);
+                total.Alignment = Element.ALIGN_RIGHT;
+                document.Add(total);
 
+                
                 document.Close();
 
                 byte[] bytes = memoryStream.ToArray();

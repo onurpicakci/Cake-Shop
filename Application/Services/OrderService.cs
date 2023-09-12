@@ -22,4 +22,9 @@ public class OrderService : IOrderService
     {
         return _orderRepository.GetOrderById(id);
     }
+    
+    public int GetLastOrderId()
+    {
+        return _orderRepository.GetLastOrderId();
+    }
 }

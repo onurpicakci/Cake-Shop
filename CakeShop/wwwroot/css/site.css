@@ -20,3 +20,22 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.thank-you-heading {
+  font-size: 30px;
+  font-weight: bold;
+  color: #f08532ff;
+  margin-bottom: 20px;
+}
+
+.order-received-text {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.contact-info-text {
+  font-size: 16px;
+  color: #333;
+  margin-top: 20px;
+}
