@@ -61,4 +61,14 @@ public class CakeRepository : ICakeRepository
     {
         return _context.Cakes.Include(c => c.Category).Where(c => c.Category.Name == categoryName).ToList();
     }
+
+    public IEnumerable<Cake> GetRelatedCakes(int cakeId)
+    {
+        var cake = _context.Cakes.Include(c => c.Category).FirstOrDefault(c => c.Id == cakeId);
+        if (cake == null)
+            return new List<Cake>();
+
+        return _context.Cakes.Include(c => c.Category).Where(c => c.CategoryId == cake.CategoryId && c.Id != cakeId)
+            .ToList();
+    }
 }

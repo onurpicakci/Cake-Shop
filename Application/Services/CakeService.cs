@@ -52,4 +52,9 @@ public class CakeService : ICakeService
     {
         return _cakeRepository.GetCakesByCategoryName(categoryName);
     }
+
+    public IEnumerable<Cake> GetRelatedCakes(int cakeId)
+    {
+        return _cakeRepository.GetRelatedCakes(cakeId);
+    }
 }
