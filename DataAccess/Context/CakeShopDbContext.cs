@@ -20,6 +20,4 @@ public class CakeShopDbContext : IdentityDbContext
     public DbSet<OrderDetail> OrderDetails { get; set; }
     public DbSet<Wishlist> Wishlists { get; set; }
     public DbSet<Testimonial> Testimonials { get; set; }
-    
-    public DbSet<Coupon> Coupons { get; set; }
 }
