@@ -16,7 +16,7 @@ $("#btn_clear_basket").click(function () {
 });
 
 $(".pro-qty .inc.qtybtn").click(function () {
-    var proQtyDiv = $(".pro-qty");
+    var proQtyDiv = $(this).closest(".quantity").find(".pro-qty");
     var cakeId = proQtyDiv.attr("data-cakeId");
     $.post("/ShoppingCart/AddToShoppingCart", { "cakeId": cakeId }, function (data) {
         if (data) {
@@ -26,7 +26,7 @@ $(".pro-qty .inc.qtybtn").click(function () {
 });
 
 $(".pro-qty .dec.qtybtn").click(function () {
-    var proQtyDiv = $(".pro-qty");
+    var proQtyDiv = $(this).closest(".quantity").find(".pro-qty");
     var cakeId = proQtyDiv.attr("data-cakeId");
     $.post("/ShoppingCart/RemoveFromShoppingCart", { "cakeId": cakeId }, function (data) {
         if (data) {
