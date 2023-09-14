@@ -657,8 +657,28 @@
       "PackagePath": "staticwebassets/template/img/shop/classic-cheesecake-with-strawberry-cherry-slices.jpg"
     },
     {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/cupcake-2.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/cupcake-2.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/cupcake-3.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/cupcake-3.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/cupcake-4.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/cupcake-4.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/cupcake-5.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/cupcake-5.jpg"
+    },
+    {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/cupcake-thumbnail.jpg",
       "PackagePath": "staticwebassets/template/img/shop/cupcake-thumbnail.jpg"
+    },
+    {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/cupcake.jpg",
+      "PackagePath": "staticwebassets/template/img/shop/cupcake.jpg"
     },
     {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/template/img/shop/details/product-big-1.jpg",

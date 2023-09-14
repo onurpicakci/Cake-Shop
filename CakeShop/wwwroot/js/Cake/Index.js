@@ -13,7 +13,6 @@ $(document).ready(function(){
         var searchQuery = $.trim($(this).val());
         $("#query-list").html("");
         if (searchQuery === "") {
-            // get all cakes
             $.ajax({
                 type: "GET",
                 url: "/api/Search",
@@ -42,7 +41,13 @@ $(document).ready(function () {
     $("#select-category").change(function () {
         var selectedCategory = $("#select-category").val();
         if (selectedCategory === "") {
-            return 
+            $.ajax({
+                type: "GET",
+                url: "/api/Search",
+                success: function (cakes) {
+                    displayCakes(cakes);
+                }
+            });
         }
         $.ajax({
             type: "GET",
