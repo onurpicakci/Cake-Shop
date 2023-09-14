@@ -4,11 +4,11 @@ namespace CakeShop.Areas.Identity.Models;
 
 public class UserLoginViewModel
 {
-    [Microsoft.Build.Framework.Required]
+    [Required]
     [Display(Name = "User Name")]
     public string UserName { get; set; }
 
-    [Microsoft.Build.Framework.Required]
+    [Required]
     [Display(Name = "Password")]
     public string Password { get; set; }
 
