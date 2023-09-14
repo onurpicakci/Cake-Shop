@@ -53,6 +53,8 @@
       <_ContentIncludedByDefault Remove="Views\Shared\Default\PartialHead.cshtml" />
       <_ContentIncludedByDefault Remove="Views\Shared\Default\Topbar.cshtml" />
       <_ContentIncludedByDefault Remove="Areas\Views\Login\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="wwwroot\admin\.DS_Store" />
+      <_ContentIncludedByDefault Remove="wwwroot\admin\package.json" />
     </ItemGroup>
 
 
