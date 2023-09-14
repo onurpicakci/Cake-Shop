@@ -50,4 +50,9 @@ public class OrderRepository : IOrderRepository
     {
         return _context.Orders.OrderByDescending(x => x.OrderPlaced).FirstOrDefault().Id;
     }
+
+    public List<Order> GetLast30DayOrders()
+    {
+        return _context.Orders.Where(x => x.OrderPlaced >= DateTime.Now.AddDays(-30)).ToList();
+    }
 }

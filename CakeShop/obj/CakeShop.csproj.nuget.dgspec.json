@@ -158,7 +158,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[7.0.9, )"
+              "version": "[7.0.10, )"
             },
             "iTextSharp": {
               "target": "Package",

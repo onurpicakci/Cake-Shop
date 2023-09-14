@@ -28,8 +28,7 @@ builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<IAboutService, AboutService>();
 builder.Services.AddScoped<ITestimonialService, TestimonialService>();
 builder.Services.AddScoped<IContactService, ContactService>();
-
-builder.Services.AddScoped<WishlistService>();
+builder.Services.AddScoped<IWishlistService, WishlistService>();
 
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()
     .AddEntityFrameworkStores<CakeShopDbContext>()
@@ -58,7 +57,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-app.UseStatusCodePagesWithReExecute("/Error/Index");
+// app.UseStatusCodePagesWithReExecute("/Error/Index");
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseSession();
@@ -76,6 +75,13 @@ app.UseEndpoints(endpoints =>
         name : "areas",
         pattern : "{area:exists}/{controller=Login}/{action=Index}/{id?}"
     );
+});
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "default",
+        pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
 });
 
 app.Run();

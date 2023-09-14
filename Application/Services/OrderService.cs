@@ -27,4 +27,9 @@ public class OrderService : IOrderService
     {
         return _orderRepository.GetLastOrderId();
     }
+
+    public List<Order> GetLast30DayOrders()
+    {
+        return _orderRepository.GetLast30DayOrders();
+    }
 }

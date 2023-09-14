@@ -10,10 +10,10 @@ namespace CakeShop.Controllers
 {
     public class WishlistController : Controller
     {
-        private readonly WishlistService _wishlistService;
+        private readonly IWishlistService _wishlistService;
         private readonly ICakeService _cakeService;
 
-        public WishlistController(WishlistService wishlistService, ICakeService cakeService)
+        public WishlistController(IWishlistService wishlistService, ICakeService cakeService)
         {
             _wishlistService = wishlistService;
             _cakeService = cakeService;
