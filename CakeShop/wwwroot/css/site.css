@@ -39,3 +39,18 @@ body {
   color: #333;
   margin-top: 20px;
 }
+.password-visibility-button {
+    background-color: #4b49ac;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 0;
+    cursor: pointer;
+}
+.password-visibility-button:hover {
+  background-color: #4b49acff;
+}
