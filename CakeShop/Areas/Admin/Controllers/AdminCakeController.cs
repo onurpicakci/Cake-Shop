@@ -6,13 +6,13 @@ using Microsoft.AspNetCore.Mvc;
 namespace CakeShop.Areas.Admin.Controllers;
 
 [Area("Admin")]
-[Route("Admin/[controller]/[action]")]
-public class ProductController : Controller
+[Route("Admin/Cake/[action]")]
+public class AdminCakeController : Controller
 {
     private readonly ICakeService _cakeService;
     private readonly ICategoryService _categoryService;
 
-    public ProductController(ICakeService cakeService, ICategoryService categoryService)
+    public AdminCakeController(ICakeService cakeService, ICategoryService categoryService)
     {
         _cakeService = cakeService;
         _categoryService = categoryService;
@@ -26,7 +26,7 @@ public class ProductController : Controller
     }
 
     [HttpGet]
-    public IActionResult AddProduct()
+    public IActionResult AddCake()
     {
         var categories = _categoryService.GetAllCategories();
         var viewModel = new AddCakeViewModel
@@ -38,17 +38,17 @@ public class ProductController : Controller
     }
 
     [HttpPost]
-    public IActionResult AddProduct(AddCakeViewModel viewModel, List<IFormFile?> imageFiles)
+    public IActionResult AddCake(AddCakeViewModel viewModel, List<IFormFile?> imageFiles)
     {
         ImageFileUpload(viewModel, imageFiles);
 
         _cakeService.Insert(viewModel.Cake);
-        return RedirectToAction("Index", "Product");
+        return RedirectToAction("Index", "AdminCake");
     }
     
     [HttpGet]
     [Route("{id:int}")]
-    public IActionResult UpdateProduct(int id)
+    public IActionResult UpdateCake(int id)
     {
         var categories = _categoryService.GetAllCategories();
         var cake = _cakeService.GetCakeById(id);
@@ -63,7 +63,7 @@ public class ProductController : Controller
     
     [HttpPost]
     [Route("{id:int}")]
-    public IActionResult UpdateProduct(AddCakeViewModel viewModel, List<IFormFile?> imageFiles)
+    public IActionResult UpdateCake(AddCakeViewModel viewModel, List<IFormFile?> imageFiles)
     {
         if (imageFiles == null || imageFiles.All(file => file == null))
         {
@@ -82,16 +82,16 @@ public class ProductController : Controller
         }
 
         _cakeService.Update(viewModel.Cake);
-        return RedirectToAction("Index", "Product");
+        return RedirectToAction("Index", "AdminCake");
     }
     
     [HttpGet]
     [Route("{id:int}")]
-    public IActionResult DeleteProduct(int id)
+    public IActionResult DeleteCake(int id)
     {
         var cake = _cakeService.GetCakeById(id);
         _cakeService.Delete(cake);
-        return RedirectToAction("Index", "Product");
+        return RedirectToAction("Index", "AdminCake");
     }
 
     private static void ImageFileUpload(AddCakeViewModel viewModel, List<IFormFile?> imageFiles)

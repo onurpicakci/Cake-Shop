@@ -9,7 +9,7 @@
 <div class="col-lg-12 grid-margin stretch-card">
     <div class="card">
         <div class="card-body">
-            <a href="/Admin/Product/AddProduct" class="btn btn-outline-primary float-right">Add Cake</a>
+            <a href="/Admin/Cake/AddCake" class="btn btn-outline-primary float-right">Add Cake</a>
             <h4 class="card-title">Cake List</h4>
             <div class="table-responsive">
                 <table class="table">
@@ -66,10 +66,10 @@
                             </td>
                             <td>@(item.InStock == true ? true : false) </td>
                             <td>
-                                <a href="/Admin/Product/UpdateProduct/@item.Id" class="btn btn-outline-primary">Update</a>
+                                <a href="/Admin/Cake/UpdateCake/@item.Id" class="btn btn-outline-primary">Update</a>
                             </td>
                             <td>
-                                <a href="/Admin/Product/DeleteProduct/@item.Id" class="btn btn-outline-danger">Delete</a>
+                                <a href="/Admin/Cake/DeleteCake/@item.Id" class="btn btn-outline-danger">Delete</a>
                             </td>
                         </tr>
                     }

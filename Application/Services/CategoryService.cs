@@ -17,4 +17,24 @@ public class CategoryService : ICategoryService
     {
         return _categoryRepository.GetAllCategories();
     }
+
+    public void AddCategory(Category category)
+    {
+        _categoryRepository.AddCategory(category);
+    }
+
+    public void UpdateCategory(Category category)
+    {
+        _categoryRepository.UpdateCategory(category);
+    }
+
+    public void DeleteCategory(int id)
+    {
+        _categoryRepository.DeleteCategory(id);
+    }
+
+    public Category GetCategoryById(int id)
+    {
+        return _categoryRepository.GetCategoryById(id);
+    }
 }

@@ -1,0 +1,46 @@
+@using Domain.Entity
+@model List<Category>
+@{
+    ViewBag.Title = "title";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <a href="/Admin/Category/AddCategory" class="btn btn-outline-primary float-right">Add Cake</a>
+            <h4 class="card-title">Category List</h4>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Icon Url</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.Name</td>
+                            <td>@item.Description</td>
+                            <td>@item.ImageUrl</td>
+                            <td>
+                                <a href="/Admin/Category/UpdateCategory/@item.Id" class="btn btn-outline-success">Update</a>
+                            </td>
+                            <td>
+                                <a href="/Admin/Category/DeleteCategory/@item.Id" class="btn btn-outline-danger">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
