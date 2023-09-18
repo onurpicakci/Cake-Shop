@@ -16,20 +16,23 @@ public class CakeRepository : ICakeRepository
 
     public void Insert(Cake entity)
     {
-        _context.Add(entity);
-        _context.SaveChanges();
+        using var context = new CakeShopDbContext();
+        context.Add(entity);
+        context.SaveChanges();
     }
 
     public void Delete(Cake entity)
     {
-        _context.Remove(entity);
-        _context.SaveChanges();
+        using var context = new CakeShopDbContext();
+        context.Remove(entity);
+        context.SaveChanges();
     }
 
     public void Update(Cake entity)
     {
-        _context.Update(entity);
-        _context.SaveChanges();
+        using var context = new CakeShopDbContext();
+        context.Update(entity);
+        context.SaveChanges();
     }
 
     public IEnumerable<Cake> GetAllCakes()

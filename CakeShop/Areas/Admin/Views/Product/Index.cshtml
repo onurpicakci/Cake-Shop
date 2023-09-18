@@ -28,6 +28,8 @@
                         <th>Image 5</th>
                         <th>Image 6</th>
                         <th>In Stock</th>
+                        <th>Update</th>
+                        <th>Delete</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -42,27 +44,33 @@
                                 <a href="#" class="show-more"></a></td>
                             <td>$@item.Price</td>
                             <td class="py-1">
-                                <img src="/@item.ImageThumbnailUrl">
-                            </td>,
-                            <td class="py-1">
-                                <img src="@item.ImageUrl">
+                                <img src="~/template/img/shop/@item.ImageThumbnailUrl">
                             </td>
                             <td class="py-1">
-                                <img src="@item.ImageUrl2">
+                                <img src="~/template/img/shop/@item.ImageUrl">
                             </td>
                             <td class="py-1">
-                                <img src="@item.ImageUrl3">
+                                <img src="~/template/img/shop/@item.ImageUrl2">
                             </td>
                             <td class="py-1">
-                                <img src="@item.ImageUrl4">
+                                <img src="~/template/img/shop/@item.ImageUrl3">
                             </td>
                             <td class="py-1">
-                                <img src="@item.ImageUrl5">
+                                <img src="~/template/img/shop/@item.ImageUrl4">
                             </td>
                             <td class="py-1">
-                                <img src="@item.ImageUrl6">
+                                <img src="~/template/img/shop/@item.ImageUrl5">
+                            </td>
+                            <td class="py-1">
+                                <img src="~/template/img/shop/@item.ImageUrl6">
                             </td>
                             <td>@(item.InStock == true ? true : false) </td>
+                            <td>
+                                <a href="/Admin/Product/UpdateProduct/@item.Id" class="btn btn-outline-primary">Update</a>
+                            </td>
+                            <td>
+                                <a href="/Admin/Product/DeleteProduct/@item.Id" class="btn btn-outline-danger">Delete</a>
+                            </td>
                         </tr>
                     }
                     </tbody>

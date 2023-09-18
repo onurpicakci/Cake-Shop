@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace CakeShop.Areas.Admin.Controllers;
 
 [Area("Admin")]
-[Route("Admin/Product/[action]")]
+[Route("Admin/[controller]/[action]")]
 public class ProductController : Controller
 {
     private readonly ICakeService _cakeService;
@@ -40,6 +40,62 @@ public class ProductController : Controller
     [HttpPost]
     public IActionResult AddProduct(AddCakeViewModel viewModel, List<IFormFile?> imageFiles)
     {
+        ImageFileUpload(viewModel, imageFiles);
+
+        _cakeService.Insert(viewModel.Cake);
+        return RedirectToAction("Index", "Product");
+    }
+    
+    [HttpGet]
+    [Route("{id:int}")]
+    public IActionResult UpdateProduct(int id)
+    {
+        var categories = _categoryService.GetAllCategories();
+        var cake = _cakeService.GetCakeById(id);
+        var viewModel = new AddCakeViewModel
+        {
+            Cake = cake,
+            Categories = categories
+        };
+
+        return View(viewModel);
+    }
+    
+    [HttpPost]
+    [Route("{id:int}")]
+    public IActionResult UpdateProduct(AddCakeViewModel viewModel, List<IFormFile?> imageFiles)
+    {
+        if (imageFiles == null || imageFiles.All(file => file == null))
+        {
+            var existingCake = _cakeService.GetCakeById(viewModel.Cake.Id);
+            viewModel.Cake.ImageThumbnailUrl = existingCake.ImageThumbnailUrl;
+            viewModel.Cake.ImageUrl = existingCake.ImageUrl;
+            viewModel.Cake.ImageUrl2 = existingCake.ImageUrl2;
+            viewModel.Cake.ImageUrl3 = existingCake.ImageUrl3;
+            viewModel.Cake.ImageUrl4 = existingCake.ImageUrl4;
+            viewModel.Cake.ImageUrl5 = existingCake.ImageUrl5;
+            viewModel.Cake.ImageUrl6 = existingCake.ImageUrl6;
+        }
+        else
+        {
+            ImageFileUpload(viewModel, imageFiles);
+        }
+
+        _cakeService.Update(viewModel.Cake);
+        return RedirectToAction("Index", "Product");
+    }
+    
+    [HttpGet]
+    [Route("{id:int}")]
+    public IActionResult DeleteProduct(int id)
+    {
+        var cake = _cakeService.GetCakeById(id);
+        _cakeService.Delete(cake);
+        return RedirectToAction("Index", "Product");
+    }
+
+    private static void ImageFileUpload(AddCakeViewModel viewModel, List<IFormFile?> imageFiles)
+    {
         if (imageFiles != null && imageFiles.Count > 0)
         {
             var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "template", "img", "shop");
@@ -56,33 +112,28 @@ public class ProductController : Controller
                 if (imageFile != null && imageFile.Length > 0)
                 {
                     var fileName = Path.GetFileName(imageFile.FileName);
-                    var uniqueFileName = Guid.NewGuid().ToString() + "_" + fileName; 
 
-                    using (var stream = new FileStream(Path.Combine(imagePath, uniqueFileName), FileMode.Create))
+                    using (var stream = new FileStream(Path.Combine(imagePath, fileName), FileMode.Create))
                     {
                         imageFile.CopyTo(stream);
                     }
 
                     if (i == 0)
-                        viewModel.Cake.ImageThumbnailUrl = uniqueFileName;
+                        viewModel.Cake.ImageThumbnailUrl = fileName;
                     else if (i == 1)
-                        viewModel.Cake.ImageUrl = uniqueFileName;
+                        viewModel.Cake.ImageUrl = fileName;
                     else if (i == 2)
-                        viewModel.Cake.ImageUrl2 = uniqueFileName;
+                        viewModel.Cake.ImageUrl2 = fileName;
                     else if (i == 3)
-                        viewModel.Cake.ImageUrl3 = uniqueFileName;
+                        viewModel.Cake.ImageUrl3 = fileName;
                     else if (i == 4)
-                        viewModel.Cake.ImageUrl4 = uniqueFileName;
+                        viewModel.Cake.ImageUrl4 = fileName;
                     else if (i == 5)
-                        viewModel.Cake.ImageUrl5 = uniqueFileName;
+                        viewModel.Cake.ImageUrl5 = fileName;
                     else if (i == 6)
-                        viewModel.Cake.ImageUrl6 = uniqueFileName;
-                    
+                        viewModel.Cake.ImageUrl6 = fileName;
                 }
             }
         }
-
-        _cakeService.Insert(viewModel.Cake);
-        return RedirectToAction("Index", "Product");
     }
 }

@@ -116,12 +116,12 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="checkout__order">
                             <h6 class="order__title">Your order</h6>
-                            <div class="checkout__order__products">Product <span>Total</span></div>
+                            <div class="checkout__order__products">Product <span class="ml-4">Total</span><span>Amount</span> </div>
                             @foreach (var item in Model.CartItems)
                             {
                                 <ul class="checkout__total__products">
                                     <li>
-                                        @item.Cake.Name <span>$ @item.Cake.Price</span>
+                                        @item.Cake.Name <span class="ml-4">$ @item.Cake.Price</span> <span>@(item.Amount)x</span>
                                     </li>
                                 </ul>
                             }
