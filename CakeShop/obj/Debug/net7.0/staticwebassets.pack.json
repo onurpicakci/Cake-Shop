@@ -7061,6 +7061,10 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/js/Admin/Product/Index.js",
+      "PackagePath": "staticwebassets/js/Admin/Product/Index.js"
+    },
+    {
       "Id": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/js/Cake/Index.js",
       "PackagePath": "staticwebassets/js/Cake/Index.js"
     },

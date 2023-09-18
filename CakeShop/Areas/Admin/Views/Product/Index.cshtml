@@ -1,0 +1,73 @@
+@using Domain.Entity
+@model List<Cake>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <a href="/Admin/Product/AddProduct" class="btn btn-outline-primary float-right">Add Cake</a>
+            <h4 class="card-title">Cake List</h4>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Cake name</th>
+                        <th>Short Description</th>
+                        <th>Long Description</th>
+                        <th>Price</th>
+                        <th>Thumbnail</th>
+                        <th>Image 1</th>
+                        <th>Image 2</th>
+                        <th>Image 3</th>
+                        <th>Image 4</th>
+                        <th>Image 5</th>
+                        <th>Image 6</th>
+                        <th>In Stock</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.Name</td>
+                            <td class="long-text">@item.ShortDescription
+                                <a href="#" class="show-more"></a></td>
+                            <td class="long-text">@item.LongDescription
+                                <a href="#" class="show-more"></a></td>
+                            <td>$@item.Price</td>
+                            <td class="py-1">
+                                <img src="/@item.ImageThumbnailUrl">
+                            </td>,
+                            <td class="py-1">
+                                <img src="@item.ImageUrl">
+                            </td>
+                            <td class="py-1">
+                                <img src="@item.ImageUrl2">
+                            </td>
+                            <td class="py-1">
+                                <img src="@item.ImageUrl3">
+                            </td>
+                            <td class="py-1">
+                                <img src="@item.ImageUrl4">
+                            </td>
+                            <td class="py-1">
+                                <img src="@item.ImageUrl5">
+                            </td>
+                            <td class="py-1">
+                                <img src="@item.ImageUrl6">
+                            </td>
+                            <td>@(item.InStock == true ? true : false) </td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

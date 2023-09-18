@@ -1,0 +1,81 @@
+@model CakeShop.Areas.Admin.Models.AddCakeViewModel
+
+@{
+    ViewBag.Title = "title";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Add Cake</h4>
+            <form class="forms-sample" asp-action="AddProduct" method="post" role="form" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" class="form-control" asp-for="Cake.Name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label>Short Description</label>
+                    <input type="text" class="form-control" asp-for="Cake.ShortDescription" placeholder="Short Description">
+                </div>
+                <div class="form-group">
+                    <label>Long Description</label>
+                    <textarea class="form-control" asp-for="Cake.LongDescription" placeholder="LongDescription"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Price</label>
+                    <input type="number" class="form-control" asp-for="Cake.Price" placeholder="Price"/>
+                </div>
+                <div class="form-group">
+                    <label>Thumbnail Url</label>
+                    <input type="file" accept=".jpg, .jpeg, .png" class="form-control" name="imageFiles[0]" placeholder="ImageThumbnailUrl">
+                </div>
+                <div>
+                    <label>Image1 Url</label>
+                    <input type="file" accept=".jpg, .jpeg, .png" class="form-control" name="imageFiles[1]" placeholder="ImageUrl1">
+                </div>
+                <div class="form-group">
+                    <label>Image2 Url</label>
+                    <input type="file" accept=".jpg, .jpeg, .png" class="form-control" name="imageFiles[2]" placeholder="ImageUrl2">
+                </div>
+                <div class="form-group">
+                    <label>Image3 Url</label>
+                    <input type="file" accept=".jpg, .jpeg, .png" class="form-control" name="imageFiles[3]" placeholder="ImageUrl3">
+                </div>
+                <div class="form-group">
+                    <label>Image4 Url</label>
+                    <input type="file" accept=".jpg, .jpeg, .png" class="form-control" name="imageFiles[4]" placeholder="ImageUrl4">
+                </div>
+                <div class="form-group">
+                    <label>Image5 Url</label>
+                    <input type="file" accept=".jpg, .jpeg, .png" class="form-control" name="imageFiles[5]" placeholder="ImageUrl5">
+                </div>
+                <div class="form-group">
+                    <label>Image6 Url</label>
+                    <input type="file" accept=".jpg, .jpeg, .png" class="form-control" name="imageFiles[6]" placeholder="ImageUrl6">
+                </div>
+                <div class="form-group">
+                    <label>Is Cake Of the Week</label>
+                    <input type="number" class="form-control" asp-for="Cake.IsCakeOfTheWeek" placeholder="IsCakeOfTheWeek">
+                </div>
+                <div class="form-group">
+                    <label>In Stock</label>
+                    <input type="number" class="form-control" asp-for="Cake.InStock" placeholder="InStock">
+                </div>
+                <div class="form-group">
+                    <label for="CategoryId">Category:</label>
+                    <select class="form-control" asp-for="Cake.CategoryId" id="CategoryId">
+                        <option value="">Select a category</option>
+                        @foreach (var category in Model.Categories)
+                        {
+                            <option value="@category.Id">@category.Name</option>
+                        }
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                <button class="btn btn-light">Cancel</button>
+            </form>
+        </div>
+    </div>
+</div>
