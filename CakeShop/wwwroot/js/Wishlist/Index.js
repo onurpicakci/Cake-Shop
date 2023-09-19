@@ -1,4 +1,4 @@
-$("#wishlistRemove").click(function () {
+$(".wishlistRemove").click(function () {
     var cakeId = $(this).attr("data-cakeId");
     $.post("/Wishlist/RemoveWishlist", { "id": cakeId }, function (data) {
         if (data){

@@ -17,4 +17,19 @@ public class TestimonialService : ITestimonialService
     {
         return _testimonialRepository.GetAllTestimonials();
     }
+
+    public void AddTestimonial(Testimonial testimonial)
+    {
+        _testimonialRepository.AddTestimonial(testimonial);
+    }
+
+    public void UpdateTestimonial(Testimonial testimonial)
+    {
+        _testimonialRepository.UpdateTestimonial(testimonial);
+    }
+
+    public void DeleteTestimonial(int id)
+    {
+        _testimonialRepository.DeleteTestimonial(id);
+    }
 }

@@ -32,4 +32,9 @@ public class OrderService : IOrderService
     {
         return _orderRepository.GetLast30DayOrders();
     }
+
+    public List<Order> GetAllOrders()
+    {
+        return _orderRepository.GetAllOrders();
+    }
 }

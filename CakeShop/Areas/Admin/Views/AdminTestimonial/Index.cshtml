@@ -1,0 +1,52 @@
+@using Domain.Entity
+@model List<Testimonial>
+@{
+    ViewBag.Title = "title";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <a href="/Admin/Testimonial/AddTestimonial" class="btn btn-outline-primary float-right">Add Testimonial</a>
+            <h4 class="card-title">Testimonial List</h4>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>City</th>
+                        <th>Message</th>
+                        <th>Image</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.Name</td>
+                            <td>@item.Surname</td>
+                            <td>@item.City</td>
+                            <td>@item.Message</td>
+                            <td>
+                                <img src="~/template/img/testimonial/@item.ImageUrl" width="100px" height="100px">
+                            </td>
+                            <td>
+                                <a href="/Admin/Testimonial/UpdateTestimonial/@item.Id" class="btn btn-outline-primary">Update</a>
+                            </td>
+                            <td>
+                                <a href="/Admin/Testimonial/DeleteTestimonial/@item.Id" class="btn btn-outline-danger">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+@using Domain.Entity
+@model Testimonial
+
+@{
+    ViewBag.Title = "title";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Add Testimonial</h4>
+            <form class="forms-sample" asp-action="AddTestimonial" method="post" role="form" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" class="form-control" asp-for="Name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label>Last Name</label>
+                    <input type="text" class="form-control" asp-for="Surname" placeholder="Last Name">
+                </div>
+                <div class="form-group">
+                    <label>City</label>
+                    <input class="form-control" asp-for="City" placeholder="City">
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea type="number" class="form-control" asp-for="Message" placeholder="Message"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Image Url</label>
+                    <input type="file" accept=".jpg, .jpeg, .png" class="form-control" name="imageFile" placeholder="ImageThumbnailUrl">
+                </div>
+                
+                <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                <button class="btn btn-light">Cancel</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -8,4 +8,5 @@ public interface IOrderRepository
     Order GetOrderById(int id);
     int GetLastOrderId();
     List<Order> GetLast30DayOrders();
+    List<Order> GetAllOrders();
 }

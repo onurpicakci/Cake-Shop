@@ -55,4 +55,13 @@ public class OrderRepository : IOrderRepository
     {
         return _context.Orders.Where(x => x.OrderPlaced >= DateTime.Now.AddDays(-30)).ToList();
     }
+
+    public List<Order> GetAllOrders()
+    {
+        return _context.Orders
+            .Include(o => o.OrderDetails)
+            .ThenInclude(o => o.Cake)
+            .OrderByDescending(o => o.OrderPlaced)
+            .ToList();
+    }
 }

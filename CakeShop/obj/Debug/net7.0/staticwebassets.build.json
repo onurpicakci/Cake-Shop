@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jrRjRGyv7fKQuaNkAhXHwJ57jt87tcTbsYNuk76pK5M=",
+  "Hash": "K2HayibHs/uTp/3rRGdWzVWiLyLqdA2FA5vZ/rTvrVg=",
   "Source": "CakeShop",
   "BasePath": "_content/CakeShop",
   "Mode": "Default",
@@ -1069,6 +1069,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/admin/.DS_Store"
+    },
+    {
+      "Identity": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/admin/css/.DS_Store",
+      "SourceId": "CakeShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/",
+      "BasePath": "_content/CakeShop",
+      "RelativePath": "admin/css/.DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/css/.DS_Store"
+    },
+    {
+      "Identity": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/admin/css/maps/.DS_Store",
+      "SourceId": "CakeShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/",
+      "BasePath": "_content/CakeShop",
+      "RelativePath": "admin/css/maps/.DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/css/maps/.DS_Store"
     },
     {
       "Identity": "/Users/onurpicakci/Desktop/Cake-Shop/CakeShop/wwwroot/admin/css/maps/vertical-layout-light/style.css.map",

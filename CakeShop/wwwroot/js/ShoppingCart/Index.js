@@ -1,4 +1,4 @@
-$("#cartItemRemove").click(function () {
+$(".cartItemRemove").click(function () {
     var cakeId = $(this).attr("data-cake-id");
     $.post("/ShoppingCart/ClearCartItem", { "cakeId": cakeId }, function (data) {
         if (data){

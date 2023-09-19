@@ -11,4 +11,6 @@ public interface IOrderService
     int GetLastOrderId();
     
     List<Order> GetLast30DayOrders();
+    
+    List<Order> GetAllOrders();
 }
