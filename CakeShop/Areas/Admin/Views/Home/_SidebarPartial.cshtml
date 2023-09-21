@@ -1,46 +1,78 @@
-
-	  <nav id="sidebar" class="active">
-		  <div class="custom-menu">
-			  <button type="button" id="sidebarCollapse" class="btn btn-primary">
-				  <i class="fa fa-bars"></i>
-				  <span class="sr-only">Toggle Menu</span>
-			  </button>
-		  </div>
-		  <div class="p-4">
-			  <h1><a href="index.html" class="logo">Flash</a></h1>
-			  <ul class="list-unstyled components mb-5">
-				  <li class="active">
-					  <a href="#"><span class="fa fa-home mr-3"></span> Home</a>
-				  </li>
-				  <li>
-					  <a href="#"><span class="fa fa-user mr-3"></span> About</a>
-				  </li>
-				  <li>
-					  <a href="#"><span class="fa fa-briefcase mr-3"></span> Portfolio</a>
-				  </li>
-				  <li>
-					  <a href="#"><span class="fa fa-sticky-note mr-3"></span> Blog</a>
-				  </li>
-				  <li>
-					  <a href="#"><span class="fa fa-paper-plane mr-3"></span> Contact</a>
-				  </li>
-			  </ul>
-
-			  <div class="mb-5">
-				  <h3 class="h6 mb-3">Subscribe for newsletter</h3>
-				  <form action="#" class="subscribe-form">
-					  <div class="form-group d-flex">
-						  <div class="icon"><span class="icon-paper-plane"></span></div>
-						  <input type="text" class="form-control" placeholder="Enter Email Address">
-					  </div>
-				  </form>
-			  </div>
-
-			  <div class="footer">
-				  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
-					  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-			  </div>
-
-		  </div>
-	  </nav>
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/Admin/Home/Index">
+              <i class="mdi mdi-view-dashboard menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Admin/Cake/Index">
+              <i class="mdi mdi-cake menu-icon"></i>
+              <span class="menu-title">Cakes</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Admin/Category/Index">
+              <i class="mdi mdi-bullseye menu-icon"></i>
+              <span class="menu-title">Categories</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="/Admin/Order/Index" aria-expanded="false">
+              <i class="mdi mdi-basket-unfill menu-icon"></i>
+              <span class="menu-title">Orders</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="/Admin/Testimonial/Index" aria-expanded="false">
+              <i class="mdi mdi-human menu-icon"></i>
+              <span class="menu-title">Testimonials</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+              <i class="icon-contract menu-icon"></i>
+              <span class="menu-title">Icons</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="icons">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Mdi icons</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <i class="icon-head menu-icon"></i>
+              <span class="menu-title">User Pages</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Register </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#error" aria-expanded="false" aria-controls="error">
+              <i class="icon-ban menu-icon"></i>
+              <span class="menu-title">Error pages</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="error">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> 404 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> 500 </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/documentation/documentation.html">
+              <i class="icon-paper menu-icon"></i>
+              <span class="menu-title">Documentation</span>
+            </a>
+          </li>
+        </ul>
+      </nav>

@@ -6,59 +6,30 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<div class="col-lg-12 d-flex align-items-stretch">
-    <div class="card w-100">
-        <div class="card-body p-4">
-            <h5 class="card-title fw-semibold mb-4">Cake List</h5>
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <a href="/Admin/Cake/AddCake" class="btn btn-outline-primary float-right">Add Cake</a>
+            <h4 class="card-title">Cake List</h4>
             <div class="table-responsive">
-                <table class="table text-nowrap mb-0 align-middle">
-                    <thead class="text-dark fs-4">
+                <table class="table">
+                    <thead>
                     <tr>
-                        <th class="border-bottom-0">
-                            <h6 class="fw-semibold mb-0">#</h6>
-                        </th>
-                        <th class="border-bottom-0">
-                            <h6 class="fw-semibold mb-0">Cake Name</h6>
-                        </th>
-                        <th class="border-bottom-0">
-                            <h6 class="fw-semibold mb-0">Short Description</h6>
-                        </th>
-                        <th class="border-bottom-0">
-                            <h6 class="fw-semibold mb-0">Long Description</h6>
-                        </th>
-                        <th class="border-bottom-0">
-                            <h6 class="fw-semibold mb-0">Price</h6>
-                        </th>
-                        <th class="border-bottom-0">
-                            <h6 class="fw-semibold mb-0">Thumbnail</h6>
-                        </th>
-                        <th class="border-bottom-0">
-                            <h6 class="fw-semibold mb-0">Image 1</h6>
-                        </th>
-                        <th class="border-bottom-0">
-                            <h6 class="fw-semibold mb-0">Image 2</h6>
-                        </th>
-                        <th class="border-bottom-0">
-                            <h6 class="fw-semibold mb-0">Image 3</h6>
-                        </th>
-                        <th class="border-bottom-0">
-                            <h6 class="fw-semibold mb-0">Image 4</h6>
-                        </th>
-                        <th class="border-bottom-0">
-                            <h6 class="fw-semibold mb-0">Image 5</h6>
-                        </th>
-                        <th class="border-bottom-0">
-                            <h6 class="fw-semibold mb-0">Image 6</h6>
-                        </th>
-                        <th class="border-bottom-0">
-                            <h6 class="fw-semibold mb-0">In Stock</h6>
-                        </th>
-                        <th class="border-bottom-0">
-                            <h6 class="fw-semibold mb-0">Update</h6>
-                        </th>
-                        <th class="border-bottom-0">
-                            <h6 class="fw-semibold mb-0">Delete</h6>
-                        </th>
+                        <th>#</th>
+                        <th>Cake name</th>
+                        <th>Short Description</th>
+                        <th>Long Description</th>
+                        <th>Price</th>
+                        <th>Thumbnail</th>
+                        <th>Image 1</th>
+                        <th>Image 2</th>
+                        <th>Image 3</th>
+                        <th>Image 4</th>
+                        <th>Image 5</th>
+                        <th>Image 6</th>
+                        <th>In Stock</th>
+                        <th>Update</th>
+                        <th>Delete</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -67,34 +38,31 @@
                         <tr>
                             <td>@item.Id</td>
                             <td>@item.Name</td>
-                            <td class="long-text">
-                                @item.ShortDescription
-                                <a href="#" class="show-more"></a>
-                            </td>
+                            <td class="long-text">@item.ShortDescription
+                                <a href="#" class="show-more"></a></td>
                             <td class="long-text">@item.LongDescription
-                                <a href="#" class="show-more"></a>
-                            </td>
-                            <td>@item.Price</td>
+                                <a href="#" class="show-more"></a></td>
+                            <td>$@item.Price</td>
                             <td class="py-1">
-                                <img src="~/template/img/shop/@item.ImageThumbnailUrl" class="rounded-circle" width="50px" height="50px">
-                            </td>
-                            <td class="py-1">
-                                <img src="~/template/img/shop/@item.ImageUrl" class="rounded-circle" width="50px" height="50px">
+                                <img src="~/template/img/shop/@item.ImageThumbnailUrl">
                             </td>
                             <td class="py-1">
-                                <img src="~/template/img/shop/@item.ImageUrl2" class="rounded-circle" width="50px" height="50px">
+                                <img src="~/template/img/shop/@item.ImageUrl">
                             </td>
                             <td class="py-1">
-                                <img src="~/template/img/shop/@item.ImageUrl3" class="rounded-circle" width="50px" height="50px">
+                                <img src="~/template/img/shop/@item.ImageUrl2">
                             </td>
                             <td class="py-1">
-                                <img src="~/template/img/shop/@item.ImageUrl4" class="rounded-circle" width="50px" height="50px">
+                                <img src="~/template/img/shop/@item.ImageUrl3">
                             </td>
                             <td class="py-1">
-                                <img src="~/template/img/shop/@item.ImageUrl5" class="rounded-circle" width="50px" height="50px">
+                                <img src="~/template/img/shop/@item.ImageUrl4">
                             </td>
                             <td class="py-1">
-                                <img src="~/template/img/shop/@item.ImageUrl6" class="rounded-circle" width="50px" height="50px">
+                                <img src="~/template/img/shop/@item.ImageUrl5">
+                            </td>
+                            <td class="py-1">
+                                <img src="~/template/img/shop/@item.ImageUrl6">
                             </td>
                             <td>@(item.InStock == true ? true : false) </td>
                             <td>
