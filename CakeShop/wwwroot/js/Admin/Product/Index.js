@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $(".long-text").each(function () {
-        var content = $(this).text(); // Sadece metni al
+        var content = $(this).text(); 
         var maxLength = 50;
 
         if (content.length > maxLength) {
