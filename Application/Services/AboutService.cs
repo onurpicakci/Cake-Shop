@@ -17,4 +17,9 @@ public class AboutService : IAboutService
     {
        return _aboutRepository.GetAllAbouts();
     }
+
+    public void UpdateAbout(About about)
+    {
+        _aboutRepository.UpdateAbout(about);
+    }
 }

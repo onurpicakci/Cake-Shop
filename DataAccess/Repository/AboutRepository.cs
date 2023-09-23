@@ -17,4 +17,10 @@ public class AboutRepository : IAboutRepository
     {
         return _context.Abouts.ToList();
     }
+
+    public void UpdateAbout(About about)
+    {
+        _context.Abouts.Update(about);
+        _context.SaveChanges();
+    }
 }

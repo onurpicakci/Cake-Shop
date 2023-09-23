@@ -1,0 +1,38 @@
+@model Domain.Entity.Contact
+
+@{
+    ViewBag.Title = "title";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Incoming Message</h4>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Sender Name</th>
+                        <th>Sender Email</th>
+                        <th>Message Content</th>
+                        <th>Date</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    
+                        <tr>
+                            <td>@Model.Id</td>
+                            <td>@Model.Name</td>
+                            <td>@Model.Email</td>
+                            <td>@Model.Message</td>
+                            <td>@Model.Date.ToString("g")</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+

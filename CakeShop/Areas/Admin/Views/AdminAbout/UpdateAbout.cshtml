@@ -1,0 +1,53 @@
+@model Domain.Entity.About
+
+@{
+    ViewBag.Title = "title";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Update About</h4>
+            <input type="hidden" asp-for="Id"/>
+            <form class="forms-sample" asp-controller="AdminAbout" asp-action="UpdateAbout" method="post" role="form">
+                <div class="form-group">
+                    <label>Title</label>
+                    <input type="text" class="form-control" asp-for="Title" placeholder="Title">
+                </div>
+                <div class="form-group">
+                    <label>Description</label>
+                    <input type="text" class="form-control" asp-for="Description" placeholder="Description">
+                </div>
+                <div class="form-group">
+                    <label>Feature 1</label>
+                    <input type="text" class="form-control" asp-for="Feature" placeholder="Feature1">
+                </div>
+                <div class="form-group">
+                    <label>Feature 2</label>
+                    <input type="text" class="form-control" asp-for="Feature2" placeholder="Feature2">
+                </div>
+                <div class="form-group">
+                    <label>Feature 3</label>
+                    <input type="text" class="form-control" asp-for="Feature3" placeholder="Feature3">
+                </div>
+                <div class="form-group">
+                    <label>Feature 1 Level</label>
+                    <input type="text" class="form-control" asp-for="FeatureLevel" placeholder="Feature1Level">
+                </div>
+                <div class="form-group">
+                    <label>Feature 2 Level</label>
+                    <input type="text" class="form-control" asp-for="Feature2Level" placeholder="Feature2Level">
+                </div>
+                <div class="form-group">
+                    <label>Feature 3 Level</label>
+                    <input type="text" class="form-control" asp-for="Feature3Level" placeholder="Feature3Level">
+                </div>
+                
+                <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                <button class="btn btn-light">Cancel</button>
+            </form>
+        </div>
+    </div>
+</div>
+
