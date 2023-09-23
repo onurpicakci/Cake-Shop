@@ -1,31 +1,28 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CakeShop.Controllers
+namespace CakeShop.Controllers;
+
+[AllowAnonymous]
+public class HeaderController : Controller
 {
-    public class HeaderController : Controller
+    private readonly ICartItemService _cartItemService;
+
+    public HeaderController(ICartItemService cartItemService)
     {
-        private readonly ICartItemService _cartItemService;
+        _cartItemService = cartItemService;
+    }
 
-        public HeaderController(ICartItemService cartItemService)
-        {
-            _cartItemService = cartItemService;
-        }
+    public IActionResult GetCartTotal()
+    {
+        var total = _cartItemService.GetShoppingCartTotal();
+        return Json(total);
+    }
 
-        public IActionResult GetCartTotal()
-        {
-            var total = _cartItemService.GetShoppingCartTotal();
-            return Json(total);
-        }
-        
-        public IActionResult GetCartItems()
-        {
-            var items = _cartItemService.GetShoppingCartItems().Count;
-            return Json(items);
-        }
+    public IActionResult GetCartItems()
+    {
+        var items = _cartItemService.GetShoppingCartItems().Count;
+        return Json(items);
     }
 }

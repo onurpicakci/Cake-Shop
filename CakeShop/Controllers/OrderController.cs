@@ -3,12 +3,10 @@ using CakeShop.ViewModels;
 using Domain.Entity;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CakeShop.Controllers
 {
-    [Authorize]
     public class OrderController : Controller
     {
         private readonly IOrderService _orderService;

@@ -1,8 +1,11 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using CakeShop.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CakeShop.Controllers;
+
+[AllowAnonymous]
 
 public class HomeController : Controller
 {
