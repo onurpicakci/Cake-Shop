@@ -35,7 +35,7 @@ namespace CakeShop.Areas.Identity.Controllers
                 var result = await _signInManager.PasswordSignInAsync(model.UserName, model.Password, true, true);
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Index", "Cake");
+                    return RedirectToAction("Index", "Home", new {area = "Admin"});
                 }
                 else
                 {

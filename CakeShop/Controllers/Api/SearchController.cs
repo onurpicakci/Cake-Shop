@@ -33,7 +33,6 @@ namespace CakeShop.Controllers.Api
         {
             if (!_cakeService.GetAllCakes().Any(x => x.Id  == id))
                 return NotFound();
-            //return new JsonResult(_pieRepository.AllPies.Where(p =>p.PieId == id);
             return Ok(_cakeService.GetAllCakes().Where(x => x.Id == id));
         }
         

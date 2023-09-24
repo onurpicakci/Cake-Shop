@@ -40,6 +40,8 @@ public class HomeController : Controller
         ViewBag.v2 = _categoryService.GetAllCategories().Count();
         ViewBag.v3 = _orderService.GetLast30DayOrders().Count();
         ViewBag.v4 = _wishlistService.GetAllWishlists().Count();
+        ViewBag.v5 = _cakeService.CakeOfTheWeek().Count();
+        ViewBag.v6 = _userManager.Users.Count();
         return View();
     }
 }

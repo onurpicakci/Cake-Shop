@@ -67,7 +67,7 @@ function displayCakes(cakes) {
         $("#query-list").append('<div class="col-lg-3 col-md-6 col-sm-6">' +
             '<div class="product__item">' +
             '<a href="/Cake/Details/' + cake.id + '">' +
-            '<div class="product__item__pic set-bg"  data-setbg="'+ cake.imageThumbnailUrl +'" style="background-image: url('+ cake.imageThumbnailUrl +');" >' +
+            '<div class="product__item__pic set-bg"  data-setbg="/template/img/shop/'+ cake.imageThumbnailUrl +'" style="background-image: url('+ cake.imageThumbnailUrl +');" >' +
             '<div class="product__label"><span>' + cake.category.name + '</span></div>' +
             '</div>' +
             '</a>' +
