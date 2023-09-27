@@ -475,3 +475,5 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+.idea/.idea.CakeShop/.idea/workspace.xml
+.idea/.idea.CakeShop/.idea/projectSettingsUpdater.xml
