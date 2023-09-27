@@ -477,3 +477,6 @@ $RECYCLE.BIN/
 *.lnk
 .idea/.idea.CakeShop/.idea/workspace.xml
 .idea/.idea.CakeShop/.idea/projectSettingsUpdater.xml
+.idea/.idea.CakeShop/.idea/.name
+.idea/.idea.CakeShop/.idea/indexLayout.xml
+.idea/.idea.CakeShop/.idea/vcs.xml
