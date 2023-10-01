@@ -11,6 +11,8 @@
 
 @await Html.PartialAsync("/Views/Default/Header.cshtml")
 @RenderBody()
+<div class="custom-notification" id="customNotification">Product added to cart!</div>
+<div class="custom-notification" id="customWishlistNotification">Product added to favorites!</div>
 
 @await Html.PartialAsync("/Views/Default/Footer.cshtml")
 <div class="search-model">

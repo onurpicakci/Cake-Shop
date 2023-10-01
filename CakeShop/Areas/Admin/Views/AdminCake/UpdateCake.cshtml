@@ -1,4 +1,3 @@
-@using Domain.Entity
 @model CakeShop.Areas.Admin.Models.AddCakeViewModel
 
 @{
@@ -12,7 +11,6 @@
             <h4 class="card-title">Update Cake</h4>
             <form class="forms-sample" asp-action="UpdateCake" method="post" role="form" enctype="multipart/form-data">
                 <input type="hidden" asp-for="Cake.Id" />
-                
                 <div class="form-group">
                     <label>Name</label>
                     <input type="text" class="form-control" asp-for="Cake.Name" placeholder="Name">
@@ -31,7 +29,7 @@
                 </div>
                 <div class="form-group">
                     <label>Thumbnail Url</label>
-                    <input type="file" accept=".jpg, .jpeg, .png" class="form-control" asp-for="Cake.ImageThumbnailUrl" placeholder="ImageThumbnailUrl">
+                    <input type="file" accept=".jpg, .jpeg, .png" class="form-control" name="imageFiles" placeholder="ImageThumbnailUrl">
                 </div>
                 <div>
                     <label>Image1 Url</label>
